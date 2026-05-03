@@ -493,11 +493,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="übung-musik-us-charts">Übung: Musik – US-Charts</h2>
 <p>Seit 1958 veröffentlicht das US-Magazin “Billboard” jeden Dienstag die “beliebtesten” Songs – basierend auf Verkäufen, Airplay und Streaming der jeweiligen Erfassungswoche. Alle Top-Titel hat Chris Dalla Riva für seinen <a href="https://www.cantgetmuchhigher.com/">Blog</a> und sein <a href="https://bio.site/uncharted_territory">Buch</a> zusammengetragen und freundlicherweise als Google-Tabelle veröffentlicht: <a href="https://docs.google.com/spreadsheets/d/1j1AUgtMnjpFTz54UdXgCKZ1i4bNxFjf01ImJ-BqBEt0/edit?gid=1077686609#gid=1077686609">Billboard Hot 100 Number Ones Database</a>.</p>
 <p><strong>→ Welche Geschichten lassen sich darin finden?</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/undraw_compose-music_9403.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/undraw_compose-music_9403.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
-</figure>
-</div>
+<img src="images/undraw_compose-music_9403.png" class="img-fluid quarto-figure quarto-figure-center" style="width:40.0%">
+<details>
+<summary>
+Mögliche Fragen
+</summary>
+<ul>
+<li><strong>Wie viele männliche und weibliche Akteur*innen gibt es</strong>: Artists, Songwriter, Producer? → gruppieren nach Spalte <code>Artist Male</code> (Y) und zählen</li>
+<li><strong>Was der Zusammenhang zwischen der Dauer auf Platz 1 und dem <code>Overall Rating</code>?</strong> → Spalten D und I, visuell auswerten: Scatter Plot mit Dauer auf x- und Overall Rating auf y-Achse</li>
+<li><strong>Spiegeln sich globale Ereignisse im Happiness-Score der Charts wieder?</strong> → Spalte AT + Datum visuell vergleichen: Punkte auf x-Achste + eingezeichnete historische Ereignisse</li>
+<li><strong>Hatte der Vietnamkrieg andere BPM als die 2000er?</strong> → Spalte AQ visuell mit vorher recherchierten und festgelegten Zeitspannen abgleichen: BPM und Zeitspannen, Verlauf in Kurven, ggf. berechnen, indem man für die jeweiligen Zeiten das Integral der Kurven ausrechnet?</li>
+<li><strong>Wie haben sich Songs hinsichtlich Dancability verändert über die Zeit?</strong> → Spalten AS und C visuell vergleichen: Scatterplot, x-Achse mit der Zeit, y-Achse Dancability; historische Ereignisse ergänzen</li>
+<li><strong>Im Laufe der Jahre, wie oft sind die Songwriter auch die Artists – gibt es mehr oder weniger Ghostwriter?</strong> → Spalten AF und AG, gruppieren nach Jahr, dann nach Songwriter-Spalte, die dann zählen</li>
+<li><strong>Über was wird gesungen?</strong> Welche Schlagwörter kommen wann häufiger vor? (z.B. dad vs father) → Spalten CK und CL, pro Jahr nach Wörtern gruppieren (Häufigkeit jedes Worts) und zählen, dann alle “und”-bla-Wörter rausstreichen und dann gucken, was am häufigsten vorkommt und spannend ist</li>
+<li><strong>Welchen Zusammenhang gibt es zwischen Dancability und Happiness?</strong> → Spalten AS und AT im Scatterplot visuell vergleichen</li>
+<li><strong>Von welchem (Parent-)Label kommen die meisten Hits und hat sich das über die Zeit verändert?</strong> → Spalten K, L und C, gruppieren nach Jahr und Label und ggf. kleine Labels zusammenfassen</li>
+<li><strong>Von welchem (Parent-)Label kommen die Hits mit der meisten Dauer auf Platz 1 und hat sich das über die Zeit verändert?</strong> → Spalten K, L, D und C, gruppieren und über die Zeit anschauen</li>
+<li><strong>Sind die Hits heutzutage für Filme komponiert oder gab es sie bei der Filmproduktion schon und sie wurden gezielt ausgewählt?</strong> → Spalten CS und CT, neue (Pivot-)Tabelle erstellen: Jahr der Veröffentlichung, nach CS / CT, gruppieren + zählen</li>
+<li><strong>… wie oben, aber für Fernsehshows: komponiert oder ausgewählt?</strong> → Spalten CU und CV gruppieren und zählen</li>
+<li><strong>Wie werden die Hits durch Streaming beeinflusst in Bezug auf Länge, BPM etc.?</strong> → zusätzliche Daten zum Streaming nötig</li>
+<li><strong>In welchem Jahrzehnt gab es die meiste explizite Sprache?</strong> → Spalten CO und C; extra Spalte mit Jahrzehnt anlegen, darauf gruppieren + zählen</li>
+</ul>
+</details>
 <p>Ein Beispiel für eine Musik-Geschichte:</p>
 <ul>
 <li>The Pudding, <a href="https://pudding.cool/2024/11/love-songs/">“Love Songs, RIP”</a></li>
@@ -505,30 +522,54 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="übung-wein" class="level2">
 <h2 class="anchored" data-anchor-id="übung-wein">Übung: Wein</h2>
-<p>Der brasilianische Informatik-Professor Rogério Xavier de Azambuja hat 2022 einen großen Datensatz erstellt mit Weinen und “Metadaten”, z.B. wie gern die Weine getrunken werden, woher sie kommen oder zu welchen Gerichten sie passen. Dieser Datensatz ist auf <a href="https://github.com/rogerioxavier/X-Wines">GitHub</a> (kleinere Test-Version mit 100 Einträgen) oder in einem <a href="https://drive.google.com/drive/folders/1vfkfa5deOSsNf3dN2R7xrWWgVXUqD1-k">Google-Drive</a> verfügbar.</p>
+<p>Der brasilianische Informatik-Professor Rogério Xavier de Azambuja hat 2022 einen großen Datensatz erstellt mit Weinen und “Metadaten”, z.B. wie gern die Weine getrunken werden, woher sie kommen oder zu welchen Gerichten sie passen. Dieser Datensatz ist auf <a href="https://github.com/rogerioxavier/X-Wines">GitHub</a> (kleinere Test-Version mit 100 Einträgen) oder in einem <a href="https://drive.google.com/drive/folders/1vfkfa5deOSsNf3dN2R7xrWWgVXUqD1-k">Google-Drive</a> verfügbar. Zum Einstieg eignet sich diese <a href="https://github.com/rogerioxavier/X-Wines/blob/main/Dataset/last/XWines_Test_100_wines.csv">csv-Datei</a>.</p>
 <p><strong>→ Was verraten uns die Daten über die Welt der Weine – und welcher wurde am besten bewertet?</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/undraw_wine-tasting_jnup.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/undraw_wine-tasting_jnup.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
+<p><a href="images/undraw_wine-tasting_jnup.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/undraw_wine-tasting_jnup.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
 </figure>
 </div>
-<p>https://github.com/rogerioxavier/X-Wines/blob/main/Dataset/last/XWines_Test_100_wines.csv</p>
+<details>
+<summary>
+Mögliche Fragen
+</summary>
+<ul>
+<li><strong>In welchen Ländern werden welche Rebsorten besonders viel angebaut?</strong> → Spalten E und K, gruppieren, zählen und sortieren nach höchster Anzahl</li>
+<li><strong>Gibt es einen Zusammenhang zwischen Region und Acidity (Säuregehalt)?</strong> → Spalten M und I auf interaktiver Karte darstellen, dazu nach Region gruppieren und Acidity auswerten</li>
+<li><strong>Gibt es einen Zusammenhang zwischen Region und ABV (Alkoholgehalt)?</strong> → Spalten M und G, könnte man ebenfalls auf interaktiver Karte darstellen; dazu nach Region gruppieren und Alkoholgehalt auswerten</li>
+<li><strong>Gibt es einen Zusammenhang zwischen Alkoholgehalt und Geschmack (Body)?</strong> → Spalten G und H</li>
+<li><strong>Gibt es einen Zusammenhang zwischen den Grapes und dem Essen, mit dem es harmonized?</strong> → Spalten E und F</li>
+<li><strong>Welcher “Type” ist am beliebtesten / kommt am häufigsten vor?</strong> → Spalte C gruppieren und zählen</li>
+<li><strong>Welche Sorte hat die ältesten Jahrgänge? Welche die neuesten? Welche meisten? Welche die wenigsten?</strong></li>
+<li><strong>Wie unterscheidet sich der durchschnittliche Alkoholgehalt je nach passendem Gericht?</strong> (Bei welchem Gericht ist es am wahrscheinlichsten, dass man hinterher mehr betrunken ist?)</li>
+</ul>
+</details>
 </section>
 <section id="übung-stadtbaumkampagne-berlin" class="level2">
 <h2 class="anchored" data-anchor-id="übung-stadtbaumkampagne-berlin">Übung: Stadtbaumkampagne Berlin</h2>
 <p>In Berlin werden im Rahmen der Stadtbaumkampgne jährlich Spenden gesammelt, um neue Bäume zu pflanzen. Mitte März bis Mitte April wurden bereits viele Bäume gepflanzt, die Senatsverwaltung für Mobilität, Verkehr, Klimaschutz und Umwelt veröffentlicht hier die <a href="https://www.berlin.de/sen/uvk/natur-und-gruen/stadtgruen/stadtbaeume/stadtbaumkampagne/baumlisten/">Baumlisten</a>.</p>
 <p><strong>→ Welche Geschichten verstecken sich in den Listen?</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/undraw_gardening_3tyw.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/undraw_gardening_3tyw.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></a></p>
-</figure>
-</div>
+<img src="images/undraw_gardening_3tyw.png" class="img-fluid quarto-figure quarto-figure-center" style="width:70.0%">
+<details>
+<summary>
+Mögliche Fragen
+</summary>
+<ul>
+<li><strong>Was wird wo gepflanzt?</strong> → Baumarten zusammenfassen nach Straßen</li>
+<li><strong>Was wurde am meisten neu gepflanzt?</strong> Allgemein und nach Stadtteilen → Baumarten (+ Stadtteile gruppieren und zählen)</li>
+<li><strong>Welcher Stadtteil hat am meisten Diversität an Pflanzen?</strong> → zuerst Diversität definieren, z.B. prozentualer Anteil</li>
+<li><strong>Wie viel Durchmischung gibt es pro Straße?</strong> → ähnlich wie “Diversität”</li>
+<li><strong>Wo / in welcher Straße wird nur eine Baumart gepflanzt?</strong> → prozentualer Anteil = 100%</li>
+<li><strong>Welche Bäume sind da schon – erhöht man die Diversität mit der Neupflanzung?</strong> (braucht zusätzliche Daten, welche Bäume schon vorhanden sind)</li>
+<li><strong>Wie dicht ist die Neubepflanzung?</strong> → nach Hausnummer-Abständen berechnen, aber eher unvollständig</li>
+</ul>
+</details>
 </section>
 <section id="wo-kann-man-nach-daten-stöbern" class="level2">
 <h2 class="anchored" data-anchor-id="wo-kann-man-nach-daten-stöbern">Wo kann man nach Daten stöbern?</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="images/undraw_file-searching_2ne8.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/undraw_file-searching_2ne8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
+<p><a href="images/undraw_file-searching_2ne8.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/undraw_file-searching_2ne8.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
 </figure>
 </div>
 <ul>
@@ -1080,43 +1121,79 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-50"><a href="#cb1-50"></a>**→ Welche Geschichten lassen sich darin finden?**</span>
 <span id="cb1-51"><a href="#cb1-51"></a></span>
 <span id="cb1-52"><a href="#cb1-52"></a><span class="al">![](images/undraw_compose-music_9403.png)</span>{width=40% fig-align="center"}</span>
-<span id="cb1-53"><a href="#cb1-53"></a></span>
-<span id="cb1-54"><a href="#cb1-54"></a>Ein Beispiel für eine Musik-Geschichte: </span>
-<span id="cb1-55"><a href="#cb1-55"></a></span>
-<span id="cb1-56"><a href="#cb1-56"></a><span class="ss">- </span>The Pudding, <span class="co">[</span><span class="ot">"Love Songs, RIP"</span><span class="co">](https://pudding.cool/2024/11/love-songs/)</span></span>
-<span id="cb1-57"><a href="#cb1-57"></a></span>
-<span id="cb1-58"><a href="#cb1-58"></a><span class="fu">## Übung: Wein</span></span>
-<span id="cb1-59"><a href="#cb1-59"></a></span>
-<span id="cb1-60"><a href="#cb1-60"></a>Der brasilianische Informatik-Professor Rogério Xavier de Azambuja hat 2022 einen großen Datensatz erstellt mit Weinen und "Metadaten", z.B. wie gern die Weine getrunken werden, woher sie kommen oder zu welchen Gerichten sie passen. Dieser Datensatz ist auf <span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com/rogerioxavier/X-Wines)</span> (kleinere Test-Version mit 100 Einträgen) oder in einem <span class="co">[</span><span class="ot">Google-Drive</span><span class="co">](https://drive.google.com/drive/folders/1vfkfa5deOSsNf3dN2R7xrWWgVXUqD1-k)</span> verfügbar.</span>
-<span id="cb1-61"><a href="#cb1-61"></a></span>
-<span id="cb1-62"><a href="#cb1-62"></a>**→ Was verraten uns die Daten über die Welt der Weine – und welcher wurde am besten bewertet?**</span>
-<span id="cb1-63"><a href="#cb1-63"></a></span>
-<span id="cb1-64"><a href="#cb1-64"></a><span class="al">![](images/undraw_wine-tasting_jnup.png)</span>{width=40% fig-align="center"}</span>
-<span id="cb1-65"><a href="#cb1-65"></a></span>
-<span id="cb1-66"><a href="#cb1-66"></a>https://github.com/rogerioxavier/X-Wines/blob/main/Dataset/last/XWines_Test_100_wines.csv</span>
-<span id="cb1-67"><a href="#cb1-67"></a></span>
-<span id="cb1-68"><a href="#cb1-68"></a><span class="fu">## Übung: Stadtbaumkampagne Berlin</span></span>
-<span id="cb1-69"><a href="#cb1-69"></a></span>
-<span id="cb1-70"><a href="#cb1-70"></a>In Berlin werden im Rahmen der Stadtbaumkampgne jährlich Spenden gesammelt, um neue Bäume zu pflanzen. Mitte März bis Mitte April wurden bereits viele Bäume gepflanzt, die Senatsverwaltung für Mobilität, Verkehr, Klimaschutz und Umwelt veröffentlicht hier die <span class="co">[</span><span class="ot">Baumlisten</span><span class="co">](https://www.berlin.de/sen/uvk/natur-und-gruen/stadtgruen/stadtbaeume/stadtbaumkampagne/baumlisten/)</span>.</span>
-<span id="cb1-71"><a href="#cb1-71"></a></span>
-<span id="cb1-72"><a href="#cb1-72"></a>**→ Welche Geschichten verstecken sich in den Listen?**</span>
-<span id="cb1-73"><a href="#cb1-73"></a></span>
-<span id="cb1-74"><a href="#cb1-74"></a><span class="al">![](images/undraw_gardening_3tyw.png)</span>{width=70% fig-align="center"}</span>
-<span id="cb1-75"><a href="#cb1-75"></a></span>
+<span id="cb1-53"><a href="#cb1-53"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Mögliche Fragen<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb1-54"><a href="#cb1-54"></a><span class="ss">* </span>**Wie viele männliche und weibliche Akteur\*innen gibt es**: Artists, Songwriter, Producer? → gruppieren nach Spalte <span class="in">`Artist Male`</span> (Y) und zählen</span>
+<span id="cb1-55"><a href="#cb1-55"></a><span class="ss">* </span>**Was der Zusammenhang zwischen der Dauer auf Platz 1 und dem `Overall Rating`?** → Spalten D und I, visuell auswerten: Scatter Plot mit Dauer auf x- und Overall Rating auf y-Achse</span>
+<span id="cb1-56"><a href="#cb1-56"></a><span class="ss">* </span>**Spiegeln sich globale Ereignisse im Happiness-Score der Charts wieder?** → Spalte AT + Datum visuell vergleichen: Punkte auf x-Achste + eingezeichnete historische Ereignisse</span>
+<span id="cb1-57"><a href="#cb1-57"></a><span class="ss">* </span>**Hatte der Vietnamkrieg andere BPM als die 2000er?** → Spalte AQ visuell mit vorher recherchierten und festgelegten Zeitspannen abgleichen: BPM und Zeitspannen, Verlauf in Kurven, ggf. berechnen, indem man für die jeweiligen Zeiten das Integral der Kurven ausrechnet?</span>
+<span id="cb1-58"><a href="#cb1-58"></a><span class="ss">* </span>**Wie haben sich Songs hinsichtlich Dancability verändert über die Zeit?** → Spalten AS und C visuell vergleichen: Scatterplot, x-Achse mit der Zeit, y-Achse Dancability; historische Ereignisse ergänzen</span>
+<span id="cb1-59"><a href="#cb1-59"></a><span class="ss">* </span>**Im Laufe der Jahre, wie oft sind die Songwriter auch die Artists – gibt es mehr oder weniger Ghostwriter?** → Spalten AF und AG, gruppieren nach Jahr, dann nach Songwriter-Spalte, die dann zählen</span>
+<span id="cb1-60"><a href="#cb1-60"></a><span class="ss">* </span>**Über was wird gesungen?** Welche Schlagwörter kommen wann häufiger vor? (z.B. dad vs father) → Spalten CK und CL, pro Jahr nach Wörtern gruppieren (Häufigkeit jedes Worts) und zählen, dann alle "und"-bla-Wörter rausstreichen und dann gucken, was am häufigsten vorkommt und spannend ist</span>
+<span id="cb1-61"><a href="#cb1-61"></a><span class="ss">* </span>**Welchen Zusammenhang gibt es zwischen Dancability und Happiness?** → Spalten AS und AT im Scatterplot visuell vergleichen</span>
+<span id="cb1-62"><a href="#cb1-62"></a><span class="ss">* </span>**Von welchem (Parent-)Label kommen die meisten Hits und hat sich das über die Zeit verändert?** → Spalten K, L und C, gruppieren nach Jahr und Label und ggf. kleine Labels zusammenfassen</span>
+<span id="cb1-63"><a href="#cb1-63"></a><span class="ss">* </span>**Von welchem (Parent-)Label kommen die Hits mit der meisten Dauer auf Platz 1 und hat sich das über die Zeit verändert?** → Spalten K, L, D und C, gruppieren und über die Zeit anschauen</span>
+<span id="cb1-64"><a href="#cb1-64"></a><span class="ss">* </span>**Sind die Hits heutzutage für Filme komponiert oder gab es sie bei der Filmproduktion schon und sie wurden gezielt ausgewählt?** → Spalten CS und CT, neue (Pivot-)Tabelle erstellen: Jahr der Veröffentlichung, nach CS / CT, gruppieren + zählen</span>
+<span id="cb1-65"><a href="#cb1-65"></a><span class="ss">* </span>**... wie oben, aber für Fernsehshows: komponiert oder ausgewählt?** → Spalten CU und CV gruppieren und zählen</span>
+<span id="cb1-66"><a href="#cb1-66"></a><span class="ss">* </span>**Wie werden die Hits durch Streaming beeinflusst in Bezug auf Länge, BPM etc.?** → zusätzliche Daten zum Streaming nötig</span>
+<span id="cb1-67"><a href="#cb1-67"></a><span class="ss">* </span>**In welchem Jahrzehnt gab es die meiste explizite Sprache?** → Spalten CO und C; extra Spalte mit Jahrzehnt anlegen, darauf gruppieren + zählen</span>
+<span id="cb1-68"><a href="#cb1-68"></a></span>
+<span id="cb1-69"><a href="#cb1-69"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb1-70"><a href="#cb1-70"></a></span>
+<span id="cb1-71"><a href="#cb1-71"></a>Ein Beispiel für eine Musik-Geschichte: </span>
+<span id="cb1-72"><a href="#cb1-72"></a></span>
+<span id="cb1-73"><a href="#cb1-73"></a><span class="ss">- </span>The Pudding, <span class="co">[</span><span class="ot">"Love Songs, RIP"</span><span class="co">](https://pudding.cool/2024/11/love-songs/)</span></span>
+<span id="cb1-74"><a href="#cb1-74"></a></span>
+<span id="cb1-75"><a href="#cb1-75"></a><span class="fu">## Übung: Wein</span></span>
 <span id="cb1-76"><a href="#cb1-76"></a></span>
-<span id="cb1-77"><a href="#cb1-77"></a><span class="fu">## Wo kann man nach Daten stöbern?</span></span>
+<span id="cb1-77"><a href="#cb1-77"></a>Der brasilianische Informatik-Professor Rogério Xavier de Azambuja hat 2022 einen großen Datensatz erstellt mit Weinen und "Metadaten", z.B. wie gern die Weine getrunken werden, woher sie kommen oder zu welchen Gerichten sie passen. Dieser Datensatz ist auf <span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com/rogerioxavier/X-Wines)</span> (kleinere Test-Version mit 100 Einträgen) oder in einem <span class="co">[</span><span class="ot">Google-Drive</span><span class="co">](https://drive.google.com/drive/folders/1vfkfa5deOSsNf3dN2R7xrWWgVXUqD1-k)</span> verfügbar. Zum Einstieg eignet sich diese <span class="co">[</span><span class="ot">csv-Datei</span><span class="co">](https://github.com/rogerioxavier/X-Wines/blob/main/Dataset/last/XWines_Test_100_wines.csv)</span>.</span>
 <span id="cb1-78"><a href="#cb1-78"></a></span>
-<span id="cb1-79"><a href="#cb1-79"></a><span class="al">![](images/undraw_file-searching_2ne8.png)</span>{width=40% fig-align="center"}</span>
+<span id="cb1-79"><a href="#cb1-79"></a>**→ Was verraten uns die Daten über die Welt der Weine – und welcher wurde am besten bewertet?**</span>
 <span id="cb1-80"><a href="#cb1-80"></a></span>
-<span id="cb1-81"><a href="#cb1-81"></a><span class="ss">* </span>"Data Is Plural", leider eingestellter Podcast + Newsletter, <span class="co">[</span><span class="ot">Archiv</span><span class="co">]( https://www.data-is-plural.com/archive/)</span></span>
-<span id="cb1-82"><a href="#cb1-82"></a><span class="ss">* </span>GitHub, z.B. Suche nach <span class="co">[</span><span class="ot">"awesome dataset"</span><span class="co">](https://github.com/search?q=awesome%20dataset&amp;type=repositories)</span></span>
-<span id="cb1-83"><a href="#cb1-83"></a><span class="ss">* </span><span class="co">[</span><span class="ot">TidyTuesday</span><span class="co">](https://rfordatascience.github.io/tidytuesday/about.html)</span>, wöchentliche Challenge, die sich vor allem auf R bezieht</span>
-<span id="cb1-84"><a href="#cb1-84"></a><span class="ss">* </span><span class="co">[</span><span class="ot">kaggle</span><span class="co">](https://www.kaggle.com/datasets)</span> as as very popular platform for data science (but I don't like it, to me it seems often a bit... contextless?)</span>
-<span id="cb1-85"><a href="#cb1-85"></a><span class="ss">* </span><span class="co">[</span><span class="ot">reddit</span><span class="co">](https://www.reddit.com/r/datasets/)</span></span>
-<span id="cb1-86"><a href="#cb1-86"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Our World in Data</span><span class="co">](https://ourworldindata.org/)</span></span>
-<span id="cb1-87"><a href="#cb1-87"></a><span class="ss">* </span>international / Ländervergleich: generell <span class="co">[</span><span class="ot">UN-Daten</span><span class="co">](https://data.un.org/)</span></span>
-<span id="cb1-88"><a href="#cb1-88"></a><span class="ss">  * </span>Weltgesundheitsorganisation <span class="co">[</span><span class="ot">WHO</span><span class="co">](https://data.who.int/indicators)</span></span>
-<span id="cb1-89"><a href="#cb1-89"></a><span class="ss">  * </span>Humanitäre Daten der UN-Organisation <span class="co">[</span><span class="ot">OCHA</span><span class="co">](https://data.humdata.org/dataset)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-81"><a href="#cb1-81"></a><span class="al">![](images/undraw_wine-tasting_jnup.png)</span>{width=40% fig-align="center"}</span>
+<span id="cb1-82"><a href="#cb1-82"></a></span>
+<span id="cb1-83"><a href="#cb1-83"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Mögliche Fragen<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb1-84"><a href="#cb1-84"></a><span class="ss">* </span>**In welchen Ländern werden welche Rebsorten besonders viel angebaut?** → Spalten E und K, gruppieren, zählen und sortieren nach höchster Anzahl</span>
+<span id="cb1-85"><a href="#cb1-85"></a><span class="ss">* </span>**Gibt es einen Zusammenhang zwischen Region und Acidity (Säuregehalt)?** → Spalten M und I auf interaktiver Karte darstellen, dazu nach Region gruppieren und Acidity auswerten</span>
+<span id="cb1-86"><a href="#cb1-86"></a><span class="ss">* </span>**Gibt es einen Zusammenhang zwischen Region und ABV (Alkoholgehalt)?** → Spalten M und G, könnte man ebenfalls auf interaktiver Karte darstellen; dazu nach Region gruppieren und Alkoholgehalt auswerten</span>
+<span id="cb1-87"><a href="#cb1-87"></a><span class="ss">* </span>**Gibt es einen Zusammenhang zwischen Alkoholgehalt und Geschmack (Body)?** → Spalten G und H</span>
+<span id="cb1-88"><a href="#cb1-88"></a><span class="ss">* </span>**Gibt es einen Zusammenhang zwischen den Grapes und dem Essen, mit dem es harmonized?** → Spalten E und F</span>
+<span id="cb1-89"><a href="#cb1-89"></a><span class="ss">* </span>**Welcher "Type" ist am beliebtesten / kommt am häufigsten vor?** → Spalte C gruppieren und zählen</span>
+<span id="cb1-90"><a href="#cb1-90"></a><span class="ss">* </span>**Welche Sorte hat die ältesten Jahrgänge? Welche die neuesten? Welche meisten? Welche die wenigsten?**</span>
+<span id="cb1-91"><a href="#cb1-91"></a><span class="ss">* </span>**Wie unterscheidet sich der durchschnittliche Alkoholgehalt je nach passendem Gericht?** (Bei welchem Gericht ist es am wahrscheinlichsten, dass man hinterher mehr betrunken ist?)</span>
+<span id="cb1-92"><a href="#cb1-92"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb1-93"><a href="#cb1-93"></a></span>
+<span id="cb1-94"><a href="#cb1-94"></a></span>
+<span id="cb1-95"><a href="#cb1-95"></a><span class="fu">## Übung: Stadtbaumkampagne Berlin</span></span>
+<span id="cb1-96"><a href="#cb1-96"></a></span>
+<span id="cb1-97"><a href="#cb1-97"></a>In Berlin werden im Rahmen der Stadtbaumkampgne jährlich Spenden gesammelt, um neue Bäume zu pflanzen. Mitte März bis Mitte April wurden bereits viele Bäume gepflanzt, die Senatsverwaltung für Mobilität, Verkehr, Klimaschutz und Umwelt veröffentlicht hier die <span class="co">[</span><span class="ot">Baumlisten</span><span class="co">](https://www.berlin.de/sen/uvk/natur-und-gruen/stadtgruen/stadtbaeume/stadtbaumkampagne/baumlisten/)</span>.</span>
+<span id="cb1-98"><a href="#cb1-98"></a></span>
+<span id="cb1-99"><a href="#cb1-99"></a>**→ Welche Geschichten verstecken sich in den Listen?**</span>
+<span id="cb1-100"><a href="#cb1-100"></a></span>
+<span id="cb1-101"><a href="#cb1-101"></a><span class="al">![](images/undraw_gardening_3tyw.png)</span>{width=70% fig-align="center"}</span>
+<span id="cb1-102"><a href="#cb1-102"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Mögliche Fragen<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb1-103"><a href="#cb1-103"></a><span class="ss">* </span>**Was wird wo gepflanzt?** → Baumarten zusammenfassen nach Straßen</span>
+<span id="cb1-104"><a href="#cb1-104"></a><span class="ss">* </span>**Was wurde am meisten neu gepflanzt?** Allgemein und nach Stadtteilen → Baumarten (+ Stadtteile gruppieren und zählen)</span>
+<span id="cb1-105"><a href="#cb1-105"></a><span class="ss">* </span>**Welcher Stadtteil hat am meisten Diversität an Pflanzen?** → zuerst Diversität definieren, z.B. prozentualer Anteil</span>
+<span id="cb1-106"><a href="#cb1-106"></a><span class="ss">* </span>**Wie viel Durchmischung gibt es pro Straße?** → ähnlich wie "Diversität"</span>
+<span id="cb1-107"><a href="#cb1-107"></a><span class="ss">* </span>**Wo / in welcher Straße wird nur eine Baumart gepflanzt?** → prozentualer Anteil = 100%</span>
+<span id="cb1-108"><a href="#cb1-108"></a><span class="ss">* </span>**Welche Bäume sind da schon – erhöht man die Diversität mit der Neupflanzung?** (braucht zusätzliche Daten, welche Bäume schon vorhanden sind)</span>
+<span id="cb1-109"><a href="#cb1-109"></a><span class="ss">* </span>**Wie dicht ist die Neubepflanzung?** → nach Hausnummer-Abständen berechnen, aber eher unvollständig</span>
+<span id="cb1-110"><a href="#cb1-110"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb1-111"><a href="#cb1-111"></a></span>
+<span id="cb1-112"><a href="#cb1-112"></a></span>
+<span id="cb1-113"><a href="#cb1-113"></a><span class="fu">## Wo kann man nach Daten stöbern?</span></span>
+<span id="cb1-114"><a href="#cb1-114"></a></span>
+<span id="cb1-115"><a href="#cb1-115"></a><span class="al">![](images/undraw_file-searching_2ne8.png)</span>{width=40% fig-align="center"}</span>
+<span id="cb1-116"><a href="#cb1-116"></a></span>
+<span id="cb1-117"><a href="#cb1-117"></a><span class="ss">* </span>"Data Is Plural", leider eingestellter Podcast + Newsletter, <span class="co">[</span><span class="ot">Archiv</span><span class="co">]( https://www.data-is-plural.com/archive/)</span></span>
+<span id="cb1-118"><a href="#cb1-118"></a><span class="ss">* </span>GitHub, z.B. Suche nach <span class="co">[</span><span class="ot">"awesome dataset"</span><span class="co">](https://github.com/search?q=awesome%20dataset&amp;type=repositories)</span></span>
+<span id="cb1-119"><a href="#cb1-119"></a><span class="ss">* </span><span class="co">[</span><span class="ot">TidyTuesday</span><span class="co">](https://rfordatascience.github.io/tidytuesday/about.html)</span>, wöchentliche Challenge, die sich vor allem auf R bezieht</span>
+<span id="cb1-120"><a href="#cb1-120"></a><span class="ss">* </span><span class="co">[</span><span class="ot">kaggle</span><span class="co">](https://www.kaggle.com/datasets)</span> as as very popular platform for data science (but I don't like it, to me it seems often a bit... contextless?)</span>
+<span id="cb1-121"><a href="#cb1-121"></a><span class="ss">* </span><span class="co">[</span><span class="ot">reddit</span><span class="co">](https://www.reddit.com/r/datasets/)</span></span>
+<span id="cb1-122"><a href="#cb1-122"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Our World in Data</span><span class="co">](https://ourworldindata.org/)</span></span>
+<span id="cb1-123"><a href="#cb1-123"></a><span class="ss">* </span>international / Ländervergleich: generell <span class="co">[</span><span class="ot">UN-Daten</span><span class="co">](https://data.un.org/)</span></span>
+<span id="cb1-124"><a href="#cb1-124"></a><span class="ss">  * </span>Weltgesundheitsorganisation <span class="co">[</span><span class="ot">WHO</span><span class="co">](https://data.who.int/indicators)</span></span>
+<span id="cb1-125"><a href="#cb1-125"></a><span class="ss">  * </span>Humanitäre Daten der UN-Organisation <span class="co">[</span><span class="ot">OCHA</span><span class="co">](https://data.humdata.org/dataset)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
