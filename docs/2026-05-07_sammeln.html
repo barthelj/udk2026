@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Daten sammeln – UdK Infoklasse: Datenjournalismus Sommersemester 2026</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./2026-05-21_struktur.html" rel="next">
+<link href="./2026-04-30_aufbereitung.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-2e5e9cb112419f7b35b2190a13f3c3da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-cbeed4863d8242317d165af4c2a4e0e2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2e5e9cb112419f7b35b2190a13f3c3da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2026-05-07_sammeln.html"><span class="chapter-title">Daten sammeln</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">UdK Infoklasse: Datenjournalismus Sommersemester 2026</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./UdK-Infoklasse--Datenjournalismus-Sommersemester-2026.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./UdK-Infoklasse--Datenjournalismus-Sommersemester-2026.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">“Geschichten in Daten – finden und erzählen”</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2026-04-16_intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Überblick</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2026-04-23_werkzeuge.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Workflows &amp; Werkzeuge</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2026-04-30_aufbereitung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Daten aufbereiten</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2026-05-07_sammeln.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Daten sammeln</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2026-05-21_struktur.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ein Projekt strukturieren</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2026-06-18_projekt.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Schritt für Schritt zum Ziel</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2026-06-25_storytelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Storytelling</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2026-07-02_dramaturgie.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dramaturgie</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2026-07-09_puffer.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Puffer für offene Fragen</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhalt</h2>
+   
+  <ul>
+  <li><a href="#ich-habe-eine-frage-aber-keine-daten" id="toc-ich-habe-eine-frage-aber-keine-daten" class="nav-link active" data-scroll-target="#ich-habe-eine-frage-aber-keine-daten">Ich habe eine Frage, aber keine Daten</a>
+  <ul class="collapse">
+  <li><a href="#beispiel-freie-plätze-sind-rar-die-lage-in-bayerischen-frauenhäusern" id="toc-beispiel-freie-plätze-sind-rar-die-lage-in-bayerischen-frauenhäusern" class="nav-link" data-scroll-target="#beispiel-freie-plätze-sind-rar-die-lage-in-bayerischen-frauenhäusern">Beispiel: “Freie Plätze sind rar: Die Lage in bayerischen Frauenhäusern”</a></li>
+  <li><a href="#übung-defekte-aufzüge-rolltreppen-in-münchen" id="toc-übung-defekte-aufzüge-rolltreppen-in-münchen" class="nav-link" data-scroll-target="#übung-defekte-aufzüge-rolltreppen-in-münchen">Übung: Defekte Aufzüge / Rolltreppen in München</a></li>
+  <li><a href="#übung-drogerie-produkte" id="toc-übung-drogerie-produkte" class="nav-link" data-scroll-target="#übung-drogerie-produkte">Übung: Drogerie-Produkte</a></li>
+  <li><a href="#übung-windkraft-bayern" id="toc-übung-windkraft-bayern" class="nav-link" data-scroll-target="#übung-windkraft-bayern">Übung: Windkraft Bayern</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-title">Daten sammeln</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="ich-habe-eine-frage-aber-keine-daten" class="level1">
+<h1>Ich habe eine Frage, aber keine Daten</h1>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Worum es heute geht
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Theorie</strong>:
+<ul>
+<li>Daten scrapen</li>
+</ul></li>
+<li><strong>Praxis</strong>:
+<ul>
+<li>Browser: Developer-Tools verstehen und nutzen</li>
+<li>Code in RStudio anlegen und ausführen</li>
+</ul></li>
+<li><strong>Technik</strong>:
+<ul>
+<li>RStudio</li>
+<li>Datenformate: JSON und WMS</li>
+</ul></li>
+<li><strong>Datenquellen</strong>:
+<ul>
+<li>Websites (Verkehrsgesellschaft, Drogeriemarkt)</li>
+<li>Öffentliche Einreichungen (Bayerisches Landesamt für Umwelt)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<section id="beispiel-freie-plätze-sind-rar-die-lage-in-bayerischen-frauenhäusern" class="level2">
+<h2 class="anchored" data-anchor-id="beispiel-freie-plätze-sind-rar-die-lage-in-bayerischen-frauenhäusern">Beispiel: “Freie Plätze sind rar: Die Lage in bayerischen Frauenhäusern”</h2>
+<p>2026: <a href="https://www.br.de/nachrichten/bayern/freie-plaetze-sind-rar-die-lage-in-bayerischen-frauenhaeusern,V8IvBb0">br24.de</a> + <a href="https://correctiv.org/projekte/lokal/">CORRECTIV.Lokal</a> → <a href="https://www.ndr.de/nachrichten/info/frauenhaeuser-am-limit-zu-wenig-schutzraeume-im-norden,frauenhaus-136.html">ndr.de</a>, <a href="https://katapult-sachsen.de/artikel/ueberlastete-frauenhaeuser-wohnungsmangel-verschaerft-die-krise/">KATAPULT Sachsen</a>, <a href="https://www.swr.de/swraktuell/baden-wuerttemberg/frauenhaeuser-in-bw-haben-selten-freie-plaetze-100.html">SWR</a>…</p>
+<p>2023: <a href="https://correctiv.org/aktuelles/2023/03/06/haeusliche-gewalt-frauenhaus-platz-finden/">correctiv.org</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/undraw_building_burz.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/undraw_building_burz.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
+</figure>
+</div>
+<p>→ Original-Website: <a href="https://www.frauenhaus-suche.de/">frauenhaus-suche.de</a></p>
+</section>
+<section id="übung-defekte-aufzüge-rolltreppen-in-münchen" class="level2">
+<h2 class="anchored" data-anchor-id="übung-defekte-aufzüge-rolltreppen-in-münchen">Übung: Defekte Aufzüge / Rolltreppen in München</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/undraw_hacker-mind_j91b.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/undraw_hacker-mind_j91b.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:45.0%"></a></p>
+</figure>
+</div>
+<p><a href="https://www.mvg.de/ueber-die-mvg/unser-engagement/barrierefreiheit/zoom.html">Website der Münchner Verkehrsgesellschaft MVG</a></p>
+<p><strong>Schritt 1:</strong> Was wünscht sich die Website-Betreiberin – was dürfen wir automatisiert auslesen? → <a href="https://www.mvg.de/robots.txt">robots.txt</a></p>
+<p><strong>Schritt 2:</strong> Wir schauen uns um: Was brauchen wir? → Developer-Tools öffnen (Rechtsklick oder Tastenkombination, je nach Browser + Betriebssystem) → <em>Tipp: Interessant ist oft “Network → XHR”.</em></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Was ist XHR?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Webseiten bestehen technisch aus HTML-Code. Hier haken “echte Programmierer” gern ein und korrigieren: HTML ist aber nur eine Auszeichnungssprache, das hat nichts mit Code zu tun.</p>
+<p>Stimmt: HTML heißt HyperTextMarkupLanguage und kann vor allem verschiedene Elemente auf einer Website darstellen: Eine Überschrift auf dem höchsten Level wird markiert mit <code>&lt;h1&gt;</code> am Anfang und <code>&lt;/h1&gt;</code> am Ende, eher eine Unterüberschrift mit <code>&lt;h2&gt;</code> und <code>&lt;/h2&gt;</code>, eine Unterunterüberschrift mit <code>&lt;h3&gt;</code> und <code>&lt;/h3&gt;</code> und so weiter…</p>
+<p>Links sind oft interessant, die sind gekennzeichnet mit <code>&lt;a href="https://example.com"&gt;Hier klicken&lt;/a&gt;</code>. Hier klicken steht dann in Link-Formatierung auf der Website. Der Teil in Anführungszeichen hinter <code>href=</code> ist die URL, wo man hingeleitet wird.</p>
+<p>Wenn jetzt eine Website was “können” soll, sich also anpassen oder Daten laden, dann nutzt man dafür JavaScript. Das ist eine Programmiersprache, die beispielsweise “wenn, dann…”-Befehle ausführen kann: “Wenn drei Sekunden vorbei sind, dann zeigst du ein neues Bild an, lieber Browser.” Oder eben: “Wenn dieser Code geladen wird, dann hole bitte die Daten im Hintergrund von folgender Website.”</p>
+<p>Und solche Daten werden dann im Hintergrund übertragen, ohne dass die Website neu geladen werden muss, mittels eines “XHR”, oder ausgeschrieben <a href="https://de.wikipedia.org/wiki/XMLHttpRequest">“XMLHttpRequest”</a>. Der Server bekommt also eine Anfrage: Ey, gib mal Daten. Und zwar in verschiedenen Formaten, XML steht im Namen, kann aber auch JSON sein.</p>
+</div>
+</div>
+<p><strong>Schritt 3:</strong> Wir schauen uns die reinen Daten im Rohformat “JSON” an: <a href="https://www.mvg.de/.rest/mvgZoom/api/stations">Schnittstelle</a></p>
+<p><strong>Schritt 4</strong>: Wir speichern uns die Daten ab, um sie lokal weiterzuverarbeiten.</p>
+<details>
+<summary>
+R-Code ausklappen
+</summary>
+<pre><code>
+library(jsonlite)
+library(rrapply)
+
+x &lt;- fromJSON("https://www.mvg.de/.rest/mvgZoom/api/stations", simplifyVector = FALSE)
+
+df &lt;- x |&gt; 
+  rrapply(how="melt")
+</code></pre>
+</details>
+</section>
+<section id="übung-drogerie-produkte" class="level2">
+<h2 class="anchored" data-anchor-id="übung-drogerie-produkte">Übung: Drogerie-Produkte</h2>
+<p>Wie viel kosten 100ml Sonnencreme im Durchschnitt und was ist der niedrigste Preis für 100ml Sonnencreme?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/undraw_shopping-app_b80f.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/undraw_shopping-app_b80f.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
+</figure>
+</div>
+<details>
+<summary>
+Code anzeigen
+</summary>
+<pre><code>url &lt;- "https://product-search.services.dmtech.com/de/search/crawl?query=Gesicht&amp;allCategories.id=020401&amp;pageSize=30&amp;searchType=editorial-search&amp;sort=editorial_relevance&amp;type=search-static&amp;enablePharmacy=true"
+x &lt;- fromJSON(url, simplifyVector = FALSE)
+
+df &lt;- x |&gt; 
+  rrapply(how="melt")</code></pre>
+</details>
+</section>
+<section id="übung-windkraft-bayern" class="level2">
+<h2 class="anchored" data-anchor-id="übung-windkraft-bayern">Übung: Windkraft Bayern</h2>
+<p>Wenn es deutschlandweit um das Thema Windkraft geht, steht Bayn immer wieder besonders schlecht da (z.B. <a href="https://www.br.de/nachrichten/bayern/nur-drei-neue-windraeder-in-bayern-wo-ist-aiwangers-turbo,VGkygI8">br24.de</a>).</p>
+<p>Aber wie ist die Situation wirklich? <strong>Welche Rolle spielt Strom aus Windkraft für Bayern?</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/undraw_wind-turbine_4z2a.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/undraw_wind-turbine_4z2a.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></a></p>
+</figure>
+</div>
+<p><strong>Schritt 1:</strong> Daten suchen</p>
+<details>
+<summary>
+Link zu Daten
+</summary>
+https://www.govdata.de/suche/daten/strom-aus-windenergie-statistik-bay
+</details>
+<p><strong>Schritt 2:</strong> Datenformat verstehen</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Was ist WMS?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>WMS steht für “Web Map Service” und ermöglicht es, <a href="https://en.wikipedia.org/wiki/Web_Map_Service">Kartendaten von Servern abzurufen</a>.</p>
+</div>
+</div>
+<p><strong>Schritt 3:</strong> Software <a href="https://qgis.org/download/">QGIS</a> öffnen und WMS-Layer hinzufügen</p>
+<p><em>Layer → Add Layer → Add WMS/WMTS Layer → “New” → URL einfügen → OK</em></p>
+
+
+<!-- -->
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./2026-04-30_aufbereitung.html" class="pagination-link" aria-label="Daten aufbereiten">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Daten aufbereiten</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./2026-05-21_struktur.html" class="pagination-link" aria-label="Ein Projekt strukturieren">
+        <span class="nav-page-text"><span class="chapter-title">Ein Projekt strukturieren</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1"></a><span class="co">---</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="an">title:</span><span class="co"> "Daten sammeln"</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="co">---</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="fu"># Ich habe eine Frage, aber keine Daten</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a></span>
+<span id="cb3-7"><a href="#cb3-7"></a>::: {.callout-note icon=false}</span>
+<span id="cb3-8"><a href="#cb3-8"></a></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="fu">## Worum es heute geht</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a></span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="ss">* </span>**Theorie**:</span>
+<span id="cb3-12"><a href="#cb3-12"></a><span class="ss">  - </span>Daten scrapen</span>
+<span id="cb3-13"><a href="#cb3-13"></a></span>
+<span id="cb3-14"><a href="#cb3-14"></a><span class="ss">* </span>**Praxis**:</span>
+<span id="cb3-15"><a href="#cb3-15"></a><span class="ss">  - </span>Browser: Developer-Tools verstehen und nutzen</span>
+<span id="cb3-16"><a href="#cb3-16"></a><span class="ss">  - </span>Code in RStudio anlegen und ausführen</span>
+<span id="cb3-17"><a href="#cb3-17"></a></span>
+<span id="cb3-18"><a href="#cb3-18"></a><span class="ss">* </span>**Technik**:</span>
+<span id="cb3-19"><a href="#cb3-19"></a><span class="ss">  - </span>RStudio</span>
+<span id="cb3-20"><a href="#cb3-20"></a><span class="ss">  - </span>Datenformate: JSON und WMS</span>
+<span id="cb3-21"><a href="#cb3-21"></a></span>
+<span id="cb3-22"><a href="#cb3-22"></a><span class="ss">* </span>**Datenquellen**:</span>
+<span id="cb3-23"><a href="#cb3-23"></a><span class="ss">  - </span>Websites (Verkehrsgesellschaft, Drogeriemarkt)</span>
+<span id="cb3-24"><a href="#cb3-24"></a><span class="ss">  - </span>Öffentliche Einreichungen (Bayerisches Landesamt für Umwelt)</span>
+<span id="cb3-25"><a href="#cb3-25"></a>  </span>
+<span id="cb3-26"><a href="#cb3-26"></a>:::</span>
+<span id="cb3-27"><a href="#cb3-27"></a></span>
+<span id="cb3-28"><a href="#cb3-28"></a></span>
+<span id="cb3-29"><a href="#cb3-29"></a><span class="fu">## Beispiel: "Freie Plätze sind rar: Die Lage in bayerischen Frauenhäusern"</span></span>
+<span id="cb3-30"><a href="#cb3-30"></a></span>
+<span id="cb3-31"><a href="#cb3-31"></a>2026: <span class="co">[</span><span class="ot">br24.de</span><span class="co">](https://www.br.de/nachrichten/bayern/freie-plaetze-sind-rar-die-lage-in-bayerischen-frauenhaeusern,V8IvBb0)</span></span>
+<span id="cb3-32"><a href="#cb3-32"></a><span class="ss">+ </span><span class="co">[</span><span class="ot">CORRECTIV.Lokal</span><span class="co">](https://correctiv.org/projekte/lokal/)</span> → <span class="co">[</span><span class="ot">ndr.de</span><span class="co">](https://www.ndr.de/nachrichten/info/frauenhaeuser-am-limit-zu-wenig-schutzraeume-im-norden,frauenhaus-136.html)</span>, <span class="co">[</span><span class="ot">KATAPULT Sachsen</span><span class="co">](https://katapult-sachsen.de/artikel/ueberlastete-frauenhaeuser-wohnungsmangel-verschaerft-die-krise/)</span>, <span class="co">[</span><span class="ot">SWR</span><span class="co">](https://www.swr.de/swraktuell/baden-wuerttemberg/frauenhaeuser-in-bw-haben-selten-freie-plaetze-100.html)</span>...</span>
+<span id="cb3-33"><a href="#cb3-33"></a></span>
+<span id="cb3-34"><a href="#cb3-34"></a></span>
+<span id="cb3-35"><a href="#cb3-35"></a>2023: <span class="co">[</span><span class="ot">correctiv.org</span><span class="co">](https://correctiv.org/aktuelles/2023/03/06/haeusliche-gewalt-frauenhaus-platz-finden/)</span></span>
+<span id="cb3-36"><a href="#cb3-36"></a></span>
+<span id="cb3-37"><a href="#cb3-37"></a><span class="al">![](images/undraw_building_burz.png)</span>{width=40% fig-align="center"}</span>
+<span id="cb3-38"><a href="#cb3-38"></a></span>
+<span id="cb3-39"><a href="#cb3-39"></a>→ Original-Website: <span class="co">[</span><span class="ot">frauenhaus-suche.de</span><span class="co">](https://www.frauenhaus-suche.de/)</span></span>
+<span id="cb3-40"><a href="#cb3-40"></a></span>
+<span id="cb3-41"><a href="#cb3-41"></a><span class="fu">## Übung: Defekte Aufzüge / Rolltreppen in München</span></span>
+<span id="cb3-42"><a href="#cb3-42"></a></span>
+<span id="cb3-43"><a href="#cb3-43"></a><span class="al">![](images/undraw_hacker-mind_j91b.png)</span>{width=45% fig-align="center"}</span>
+<span id="cb3-44"><a href="#cb3-44"></a></span>
+<span id="cb3-45"><a href="#cb3-45"></a><span class="co">[</span><span class="ot">Website der Münchner Verkehrsgesellschaft MVG</span><span class="co">](https://www.mvg.de/ueber-die-mvg/unser-engagement/barrierefreiheit/zoom.html)</span></span>
+<span id="cb3-46"><a href="#cb3-46"></a></span>
+<span id="cb3-47"><a href="#cb3-47"></a>**Schritt 1:** Was wünscht sich die Website-Betreiberin – was dürfen wir automatisiert auslesen? → <span class="co">[</span><span class="ot">robots.txt</span><span class="co">](https://www.mvg.de/robots.txt)</span></span>
+<span id="cb3-48"><a href="#cb3-48"></a></span>
+<span id="cb3-49"><a href="#cb3-49"></a>**Schritt 2:** Wir schauen uns um: Was brauchen wir? → Developer-Tools öffnen (Rechtsklick oder Tastenkombination, je nach Browser + Betriebssystem) → _Tipp: Interessant ist oft "Network → XHR"._</span>
+<span id="cb3-50"><a href="#cb3-50"></a></span>
+<span id="cb3-51"><a href="#cb3-51"></a>:::{.callout-note icon=false}</span>
+<span id="cb3-52"><a href="#cb3-52"></a><span class="fu">## Was ist XHR?</span></span>
+<span id="cb3-53"><a href="#cb3-53"></a>Webseiten bestehen technisch aus HTML-Code. Hier haken "echte Programmierer" gern ein und korrigieren: HTML ist aber nur eine Auszeichnungssprache, das hat nichts mit Code zu tun. </span>
+<span id="cb3-54"><a href="#cb3-54"></a></span>
+<span id="cb3-55"><a href="#cb3-55"></a>Stimmt: HTML heißt HyperTextMarkupLanguage und kann vor allem verschiedene Elemente auf einer Website darstellen: Eine Überschrift auf dem höchsten Level wird markiert mit <span class="in">`&lt;h1&gt;`</span> am Anfang und <span class="in">`&lt;/h1&gt;`</span> am Ende, eher eine Unterüberschrift mit <span class="in">`&lt;h2&gt;`</span> und <span class="in">`&lt;/h2&gt;`</span>, eine Unterunterüberschrift mit <span class="in">`&lt;h3&gt;`</span> und <span class="in">`&lt;/h3&gt;`</span> und so weiter...</span>
+<span id="cb3-56"><a href="#cb3-56"></a></span>
+<span id="cb3-57"><a href="#cb3-57"></a>Links sind oft interessant, die sind gekennzeichnet mit <span class="in">`&lt;a href="https://example.com"&gt;Hier klicken&lt;/a&gt;`</span>. Hier klicken steht dann in Link-Formatierung auf der Website. Der Teil in Anführungszeichen hinter <span class="in">`href=`</span> ist die URL, wo man hingeleitet wird.</span>
+<span id="cb3-58"><a href="#cb3-58"></a></span>
+<span id="cb3-59"><a href="#cb3-59"></a>Wenn jetzt eine Website was "können" soll, sich also anpassen oder Daten laden, dann nutzt man dafür JavaScript. Das ist eine Programmiersprache, die beispielsweise "wenn, dann..."-Befehle ausführen kann: "Wenn drei Sekunden vorbei sind, dann zeigst du ein neues Bild an, lieber Browser." Oder eben: "Wenn dieser Code geladen wird, dann hole bitte die Daten im Hintergrund von folgender Website."</span>
+<span id="cb3-60"><a href="#cb3-60"></a></span>
+<span id="cb3-61"><a href="#cb3-61"></a>Und solche Daten werden dann im Hintergrund übertragen, ohne dass die Website neu geladen werden muss, mittels eines "XHR", oder ausgeschrieben <span class="co">[</span><span class="ot">"XMLHttpRequest"</span><span class="co">](https://de.wikipedia.org/wiki/XMLHttpRequest)</span>. Der Server bekommt also eine Anfrage: Ey, gib mal Daten. Und zwar in verschiedenen Formaten, XML steht im Namen, kann aber auch JSON sein.</span>
+<span id="cb3-62"><a href="#cb3-62"></a>:::</span>
+<span id="cb3-63"><a href="#cb3-63"></a></span>
+<span id="cb3-64"><a href="#cb3-64"></a>**Schritt 3:** Wir schauen uns die reinen Daten im Rohformat "JSON" an: <span class="co">[</span><span class="ot">Schnittstelle</span><span class="co">](https://www.mvg.de/.rest/mvgZoom/api/stations)</span></span>
+<span id="cb3-65"><a href="#cb3-65"></a></span>
+<span id="cb3-66"><a href="#cb3-66"></a>**Schritt 4**: Wir speichern uns die Daten ab, um sie lokal weiterzuverarbeiten.</span>
+<span id="cb3-67"><a href="#cb3-67"></a></span>
+<span id="cb3-68"><a href="#cb3-68"></a></span>
+<span id="cb3-69"><a href="#cb3-69"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>R-Code ausklappen<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb3-70"><a href="#cb3-70"></a></span>
+<span id="cb3-71"><a href="#cb3-71"></a><span class="in">```</span></span>
+<span id="cb3-72"><a href="#cb3-72"></a></span>
+<span id="cb3-73"><a href="#cb3-73"></a><span class="in">library(jsonlite)</span></span>
+<span id="cb3-74"><a href="#cb3-74"></a><span class="in">library(rrapply)</span></span>
+<span id="cb3-75"><a href="#cb3-75"></a></span>
+<span id="cb3-76"><a href="#cb3-76"></a><span class="in">x &lt;- fromJSON("https://www.mvg.de/.rest/mvgZoom/api/stations", simplifyVector = FALSE)</span></span>
+<span id="cb3-77"><a href="#cb3-77"></a></span>
+<span id="cb3-78"><a href="#cb3-78"></a><span class="in">df &lt;- x |&gt; </span></span>
+<span id="cb3-79"><a href="#cb3-79"></a><span class="in">  rrapply(how="melt")</span></span>
+<span id="cb3-80"><a href="#cb3-80"></a></span>
+<span id="cb3-81"><a href="#cb3-81"></a><span class="in">```</span></span>
+<span id="cb3-82"><a href="#cb3-82"></a></span>
+<span id="cb3-83"><a href="#cb3-83"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb3-84"><a href="#cb3-84"></a></span>
+<span id="cb3-85"><a href="#cb3-85"></a></span>
+<span id="cb3-86"><a href="#cb3-86"></a><span class="fu">## Übung: Drogerie-Produkte</span></span>
+<span id="cb3-87"><a href="#cb3-87"></a></span>
+<span id="cb3-88"><a href="#cb3-88"></a>Wie viel kosten 100ml Sonnencreme im Durchschnitt und was ist der niedrigste Preis für 100ml Sonnencreme? </span>
+<span id="cb3-89"><a href="#cb3-89"></a></span>
+<span id="cb3-90"><a href="#cb3-90"></a><span class="al">![](images/undraw_shopping-app_b80f.png)</span>{width=40% fig-align="center"}</span>
+<span id="cb3-91"><a href="#cb3-91"></a></span>
+<span id="cb3-92"><a href="#cb3-92"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Code anzeigen<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb3-93"><a href="#cb3-93"></a><span class="in">```</span></span>
+<span id="cb3-94"><a href="#cb3-94"></a><span class="in">url &lt;- "https://product-search.services.dmtech.com/de/search/crawl?query=Gesicht&amp;allCategories.id=020401&amp;pageSize=30&amp;searchType=editorial-search&amp;sort=editorial_relevance&amp;type=search-static&amp;enablePharmacy=true"</span></span>
+<span id="cb3-95"><a href="#cb3-95"></a><span class="in">x &lt;- fromJSON(url, simplifyVector = FALSE)</span></span>
+<span id="cb3-96"><a href="#cb3-96"></a></span>
+<span id="cb3-97"><a href="#cb3-97"></a><span class="in">df &lt;- x |&gt; </span></span>
+<span id="cb3-98"><a href="#cb3-98"></a><span class="in">  rrapply(how="melt")</span></span>
+<span id="cb3-99"><a href="#cb3-99"></a><span class="in">```</span></span>
+<span id="cb3-100"><a href="#cb3-100"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb3-101"><a href="#cb3-101"></a><span class="fu">## Übung: Windkraft Bayern</span></span>
+<span id="cb3-102"><a href="#cb3-102"></a></span>
+<span id="cb3-103"><a href="#cb3-103"></a>Wenn es deutschlandweit um das Thema Windkraft geht, steht Bayn immer wieder besonders schlecht da (z.B. <span class="co">[</span><span class="ot">br24.de</span><span class="co">](https://www.br.de/nachrichten/bayern/nur-drei-neue-windraeder-in-bayern-wo-ist-aiwangers-turbo,VGkygI8)</span>).</span>
+<span id="cb3-104"><a href="#cb3-104"></a></span>
+<span id="cb3-105"><a href="#cb3-105"></a>Aber wie ist die Situation wirklich? **Welche Rolle spielt Strom aus Windkraft für Bayern?**</span>
+<span id="cb3-106"><a href="#cb3-106"></a></span>
+<span id="cb3-107"><a href="#cb3-107"></a></span>
+<span id="cb3-108"><a href="#cb3-108"></a><span class="al">![](images/undraw_wind-turbine_4z2a.png)</span>{width=50% fig-align="center"}</span>
+<span id="cb3-109"><a href="#cb3-109"></a></span>
+<span id="cb3-110"><a href="#cb3-110"></a></span>
+<span id="cb3-111"><a href="#cb3-111"></a>**Schritt 1:** Daten suchen</span>
+<span id="cb3-112"><a href="#cb3-112"></a></span>
+<span id="cb3-113"><a href="#cb3-113"></a><span class="dt">&lt;</span><span class="kw">details</span><span class="dt">&gt;&lt;</span><span class="kw">summary</span><span class="dt">&gt;</span>Link zu Daten<span class="dt">&lt;/</span><span class="kw">summary</span><span class="dt">&gt;</span></span>
+<span id="cb3-114"><a href="#cb3-114"></a>https://www.govdata.de/suche/daten/strom-aus-windenergie-statistik-bay</span>
+<span id="cb3-115"><a href="#cb3-115"></a><span class="dt">&lt;/</span><span class="kw">details</span><span class="dt">&gt;</span></span>
+<span id="cb3-116"><a href="#cb3-116"></a></span>
+<span id="cb3-117"><a href="#cb3-117"></a>**Schritt 2:** Datenformat verstehen</span>
+<span id="cb3-118"><a href="#cb3-118"></a></span>
+<span id="cb3-119"><a href="#cb3-119"></a>:::{.callout-note icon=false}</span>
+<span id="cb3-120"><a href="#cb3-120"></a><span class="fu">## Was ist WMS?</span></span>
+<span id="cb3-121"><a href="#cb3-121"></a></span>
+<span id="cb3-122"><a href="#cb3-122"></a>WMS steht für "Web Map Service" und ermöglicht es, <span class="co">[</span><span class="ot">Kartendaten von Servern abzurufen</span><span class="co">](https://en.wikipedia.org/wiki/Web_Map_Service)</span>.</span>
+<span id="cb3-123"><a href="#cb3-123"></a>:::</span>
+<span id="cb3-124"><a href="#cb3-124"></a></span>
+<span id="cb3-125"><a href="#cb3-125"></a>**Schritt 3:** Software <span class="co">[</span><span class="ot">QGIS</span><span class="co">](https://qgis.org/download/)</span> öffnen und WMS-Layer hinzufügen</span>
+<span id="cb3-126"><a href="#cb3-126"></a></span>
+<span id="cb3-127"><a href="#cb3-127"></a>_Layer → Add Layer → Add WMS/WMTS Layer → "New" → URL einfügen → OK_</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>
