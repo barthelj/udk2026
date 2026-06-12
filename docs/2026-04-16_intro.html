@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -44,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a5073d10eb2b4aba2c5e1c28bdd277e7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-feb75622fb5647436da2452d74ef0bcb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-a5073d10eb2b4aba2c5e1c28bdd277e7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2e5e9cb112419f7b35b2190a13f3c3da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-cbeed4863d8242317d165af4c2a4e0e2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2e5e9cb112419f7b35b2190a13f3c3da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -331,7 +366,17 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026-06-18_projekt.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Schritt für Schritt zum Ziel</span></a>
+  <a href="./2026-06-04_feedback.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Projekt ist fertig – wir blicken zurück</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2026-06-11_webscraping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Webscraping</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2026-06-18_kartendaten.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kartendaten</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -346,13 +391,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026-07-09_puffer.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Puffer für offene Fragen</span></a>
+  <a href="./2026-07-09_text.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Text</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">References</span></a>
   </div>
 </li>
     </ul>
@@ -377,7 +421,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Überblick</span></h1>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-title">Überblick</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
 </div>
 
 
@@ -444,24 +488,34 @@ ul.task-list li input[type="checkbox"] {
 <td><a href="./2026-05-21_struktur.html">Kapitel</a> <a href="">Daten</a></td>
 </tr>
 <tr class="even">
-<td>18./19.06.2026</td>
-<td>Projektblock 2 – eigene Fragestellung</td>
-<td><a href="./2026-06-18_projekt.html">Kapitel</a> <a href="">Daten</a></td>
+<td>04.06.2026</td>
+<td>Feedback</td>
+<td><a href="./2026-06-04_feedback.html">Kapitel</a> <a href="">Daten</a></td>
+</tr>
+<tr class="odd">
+<td>11.06.2026</td>
+<td>Webscraping</td>
+<td><a href="./2026-06-11_webscraping.html">Kapitel</a> <a href="">Daten</a></td>
+</tr>
+<tr class="even">
+<td>18.06.2026</td>
+<td>Kartendaten</td>
+<td><a href="./2026-06-18_kartendaten.html">Kapitel</a> <a href="">Daten</a></td>
 </tr>
 <tr class="odd">
 <td>25.06.2026</td>
-<td>Storytelling: Fehler vermeiden &amp; Fokus behalten</td>
+<td>Storytelling</td>
 <td><a href="./2026-06-25_storytelling.html">Kapitel</a> <a href="">Daten</a></td>
 </tr>
 <tr class="even">
 <td>02.07.2026</td>
 <td>Datenjournalistische Dramaturgie</td>
-<td><a href="2026-06-25_dramaturgie.qmd">Kapitel</a> <a href="">Daten</a></td>
+<td><a href="./2026-07-02_dramaturgie.html">Kapitel</a> <a href="">Daten</a></td>
 </tr>
 <tr class="odd">
 <td>09.07.2026</td>
-<td>Text &amp; Storytelling</td>
-<td><a href="./2026-07-09_puffer.html">Kapitel</a> <a href="">Daten</a></td>
+<td>Text</td>
+<td><a href="./2026-07-09_text.html">Kapitel</a> <a href="">Daten</a></td>
 </tr>
 </tbody>
 </table>
@@ -524,6 +578,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 
+
+<!-- -->
 
 </section>
 
@@ -611,6 +667,57 @@ ul.task-list li input[type="checkbox"] {
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -952,7 +1059,77 @@ ul.task-list li input[type="checkbox"] {
         <span class="nav-page-text"><span class="chapter-title">Workflows &amp; Werkzeuge</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> Überblick</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co">---</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="fu">## → Was machen wir in diesem Seminar?</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a>Wir lernen mit vielen praktischen Übungen und kompaktem theoretischem Input, wie man Geschichten in Daten findet. Dazu lernen wir unsere Rechner und das Internet besser kennen. Insbesondere schauen wir uns an, wie und wo man Daten findet, wie man eigene Datensätze erstellt und wie man Erkenntnisse aus Daten kommuniziert.</span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a>_Wichtig:_ Wir versuchen uns auch an Visualisierungen. Weil es dazu aber viele andere Kurse gibt, konzentrieren wir uns darauf, die richtige Visualisierung auszuwählen und zu lernen, wie wir Daten dafür strukturieren.</span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="al">![](images/undraw_around-the-world_1p8h.png)</span>{width=40% fig-align="center"}</span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a></span>
+<span id="cb1-14"><a href="#cb1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15"></a>🌍 **Das Wissen ist da** – ich helfe euch dabei, es zu verstehen und anwenden zu können.</span>
+<span id="cb1-16"><a href="#cb1-16"></a></span>
+<span id="cb1-17"><a href="#cb1-17"></a>🪑 **Die Idee**: Wir nutzen die Zeit im Seminarraum möglichst gut, damit ihr rausgeht und die Grundlagen sicher beherrscht. </span>
+<span id="cb1-18"><a href="#cb1-18"></a></span>
+<span id="cb1-19"><a href="#cb1-19"></a>🚀 **Wer mehr will**: Ich empfehle euch Ressourcen und Material, um noch tiefer einzusteigen.</span>
+<span id="cb1-20"><a href="#cb1-20"></a></span>
+<span id="cb1-21"><a href="#cb1-21"></a><span class="fu">## Semesterplan</span></span>
+<span id="cb1-22"><a href="#cb1-22"></a></span>
+<span id="cb1-23"><a href="#cb1-23"></a>Datum      | Thema                          | Link</span>
+<span id="cb1-24"><a href="#cb1-24"></a>-----------|--------------------------------|-----------</span>
+<span id="cb1-25"><a href="#cb1-25"></a>16.04.2026 | Einführung     | <span class="co">[</span><span class="ot">Kapitel</span><span class="co">](2026-04-16_intro.qmd)</span> <span class="co">[</span><span class="ot">Daten</span><span class="co">]()</span></span>
+<span id="cb1-26"><a href="#cb1-26"></a>23.04.2026 | Workflow &amp; Werkzeuge           | <span class="co">[</span><span class="ot">Kapitel</span><span class="co">](2026-04-23_werkzeuge.qmd)</span> <span class="co">[</span><span class="ot">Daten</span><span class="co">]()</span></span>
+<span id="cb1-27"><a href="#cb1-27"></a>30.04.2026 | Ich habe Daten, was jetzt?     | <span class="co">[</span><span class="ot">Kapitel</span><span class="co">](2026-04-30_aufbereitung.qmd)</span> <span class="co">[</span><span class="ot">Daten</span><span class="co">]()</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a>07.05.2026 | Ich habe eine Frage, aber keine Daten – was jetzt? | <span class="co">[</span><span class="ot">Kapitel</span><span class="co">](2026-05-07_sammeln.qmd)</span> <span class="co">[</span><span class="ot">Daten</span><span class="co">]()</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a>21./22.05.2026 | Projektblock 1 – eigene Fragestellung | <span class="co">[</span><span class="ot">Kapitel</span><span class="co">](2026-05-21_struktur.qmd)</span> <span class="co">[</span><span class="ot">Daten</span><span class="co">]()</span></span>
+<span id="cb1-30"><a href="#cb1-30"></a>04.06.2026 | Feedback | <span class="co">[</span><span class="ot">Kapitel</span><span class="co">](2026-06-04_feedback.qmd)</span> <span class="co">[</span><span class="ot">Daten</span><span class="co">]()</span></span>
+<span id="cb1-31"><a href="#cb1-31"></a>11.06.2026 | Webscraping | <span class="co">[</span><span class="ot">Kapitel</span><span class="co">](2026-06-11_webscraping.qmd)</span> <span class="co">[</span><span class="ot">Daten</span><span class="co">]()</span></span>
+<span id="cb1-32"><a href="#cb1-32"></a>18.06.2026 | Kartendaten | <span class="co">[</span><span class="ot">Kapitel</span><span class="co">](2026-06-18_kartendaten.qmd)</span> <span class="co">[</span><span class="ot">Daten</span><span class="co">]()</span></span>
+<span id="cb1-33"><a href="#cb1-33"></a>25.06.2026 | Storytelling | <span class="co">[</span><span class="ot">Kapitel</span><span class="co">](2026-06-25_storytelling.qmd)</span> <span class="co">[</span><span class="ot">Daten</span><span class="co">]()</span></span>
+<span id="cb1-34"><a href="#cb1-34"></a>02.07.2026 | Datenjournalistische Dramaturgie | <span class="co">[</span><span class="ot">Kapitel</span><span class="co">](2026-07-02_dramaturgie.qmd)</span> <span class="co">[</span><span class="ot">Daten</span><span class="co">]()</span></span>
+<span id="cb1-35"><a href="#cb1-35"></a>09.07.2026 | Text | <span class="co">[</span><span class="ot">Kapitel</span><span class="co">](2026-07-09_text.qmd)</span> <span class="co">[</span><span class="ot">Daten</span><span class="co">]()</span></span>
+<span id="cb1-36"><a href="#cb1-36"></a></span>
+<span id="cb1-37"><a href="#cb1-37"></a></span>
+<span id="cb1-38"><a href="#cb1-38"></a><span class="fu">## Eckpunkte – Erwartungen</span></span>
+<span id="cb1-39"><a href="#cb1-39"></a></span>
+<span id="cb1-40"><a href="#cb1-40"></a>In der Einführungssitzung haben wir darüber gesprochen, was ihr euch wünscht – daran werde ich das Angebot ausrichten.</span>
+<span id="cb1-41"><a href="#cb1-41"></a></span>
+<span id="cb1-42"><a href="#cb1-42"></a><span class="in">```{r fig.width=10, fig.height=3, echo=FALSE, info=FALSE, message=FALSE}</span></span>
+<span id="cb1-43"><a href="#cb1-43"></a><span class="fu">source</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"code/functions_and_packages.R"</span>))</span>
+<span id="cb1-44"><a href="#cb1-44"></a><span class="in">```</span></span>
+<span id="cb1-45"><a href="#cb1-45"></a></span>
+<span id="cb1-46"><a href="#cb1-46"></a></span>
+<span id="cb1-47"><a href="#cb1-47"></a><span class="in">```{r fig.width=10, fig.height=2, echo=FALSE}</span></span>
+<span id="cb1-48"><a href="#cb1-48"></a><span class="fu">quality_scale</span>(<span class="fl">0.01</span>, <span class="at">heading=</span><span class="st">"Hauptziel des Seminars"</span>, <span class="at">label_left=</span><span class="st">"Skills erwerben"</span>, <span class="at">label_right=</span><span class="st">"Portfolio anlegen"</span>, <span class="at">color=</span><span class="st">"#008cba"</span>)</span>
+<span id="cb1-49"><a href="#cb1-49"></a><span class="in">```</span></span>
+<span id="cb1-50"><a href="#cb1-50"></a></span>
+<span id="cb1-51"><a href="#cb1-51"></a><span class="in">```{r fig.width=10, fig.height=2, echo=FALSE}</span></span>
+<span id="cb1-52"><a href="#cb1-52"></a><span class="fu">quality_scale</span>(<span class="fl">0.5</span>, <span class="at">heading=</span><span class="st">"Kompetenzen"</span>, <span class="at">label_left=</span><span class="st">"Recherche"</span>, <span class="at">label_right=</span><span class="st">"Storytelling"</span>, <span class="at">color=</span><span class="st">"#008cba"</span>)</span>
+<span id="cb1-53"><a href="#cb1-53"></a><span class="in">```</span></span>
+<span id="cb1-54"><a href="#cb1-54"></a></span>
+<span id="cb1-55"><a href="#cb1-55"></a><span class="in">```{r fig.width=10, fig.height=2, echo=FALSE}</span></span>
+<span id="cb1-56"><a href="#cb1-56"></a><span class="fu">quality_scale</span>(<span class="fl">0.3</span>, <span class="at">heading=</span><span class="st">"Software-Skills"</span>, <span class="at">label_left=</span><span class="st">"Tools"</span>, <span class="at">label_right=</span><span class="st">"Code-Profis"</span>, <span class="at">color=</span><span class="st">"#008cba"</span>)</span>
+<span id="cb1-57"><a href="#cb1-57"></a><span class="in">```</span></span>
+<span id="cb1-58"><a href="#cb1-58"></a></span>
+<span id="cb1-59"><a href="#cb1-59"></a><span class="in">```{r fig.width=10, fig.height=2, echo=FALSE}</span></span>
+<span id="cb1-60"><a href="#cb1-60"></a><span class="fu">quality_scale</span>(<span class="fl">0.5</span>, <span class="at">heading=</span><span class="st">"Quellen"</span>, <span class="at">label_left=</span><span class="st">"Zahlen/Tabellen"</span>, <span class="at">label_right=</span><span class="st">"Multimedia/Dokumente"</span>, <span class="at">color=</span><span class="st">"#008cba"</span>)</span>
+<span id="cb1-61"><a href="#cb1-61"></a><span class="in">```</span></span>
+<span id="cb1-62"><a href="#cb1-62"></a></span>
+<span id="cb1-63"><a href="#cb1-63"></a><span class="in">```{r fig.width=10, fig.height=2, echo=FALSE}</span></span>
+<span id="cb1-64"><a href="#cb1-64"></a><span class="fu">quality_scale</span>(<span class="fl">0.1</span>, <span class="at">heading=</span><span class="st">"Zeitliche Ressourcen"</span>, <span class="at">label_left=</span><span class="st">"im Seminar"</span>, <span class="at">label_right=</span><span class="st">"außerhalb"</span>, <span class="at">color=</span><span class="st">"#008cba"</span>)</span>
+<span id="cb1-65"><a href="#cb1-65"></a><span class="in">```</span></span>
+<span id="cb1-66"><a href="#cb1-66"></a></span>
+<span id="cb1-67"><a href="#cb1-67"></a><span class="in">```{r fig.width=10, fig.height=2, echo=FALSE}</span></span>
+<span id="cb1-68"><a href="#cb1-68"></a><span class="fu">quality_scale</span>(<span class="fl">0.6</span>, <span class="at">heading=</span><span class="st">"Soziale Ressourcen"</span>, <span class="at">label_left=</span><span class="st">"Gruppenarbeit"</span>, <span class="at">label_right=</span><span class="st">"Einzelarbeit"</span>, <span class="at">color=</span><span class="st">"#008cba"</span>)</span>
+<span id="cb1-69"><a href="#cb1-69"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
 <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {

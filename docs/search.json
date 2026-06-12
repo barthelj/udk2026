@@ -1,0 +1,482 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "UdK Infoklasse: Datenjournalismus Sommersemester 2026",
+    "section": "",
+    "text": "“Geschichten in Daten – finden und erzählen”",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>\"Geschichten in Daten – finden und erzählen\"</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#was-ihr-am-ende-könnt",
+    "href": "index.html#was-ihr-am-ende-könnt",
+    "title": "UdK Infoklasse: Datenjournalismus Sommersemester 2026",
+    "section": "Was ihr am Ende könnt",
+    "text": "Was ihr am Ende könnt\n\nDatenjournalistische Fragestellungen entwickeln und Umsetzung planen\nSpickzettel benutzen und Hilfe suchen\nDaten verarbeiten: Input – Blackbox-Gerödel* – Output (visualisierungsfertig)\nbesser mit eurem Computer und dem Internet umgehen\n\n* dafür lernen wir einen ganzen Haufen Tools und Techniken kennen",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>\"Geschichten in Daten – finden und erzählen\"</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#orientierung",
+    "href": "index.html#orientierung",
+    "title": "UdK Infoklasse: Datenjournalismus Sommersemester 2026",
+    "section": "Orientierung",
+    "text": "Orientierung\n\n\n\nDiese Dokumente\nSemesterplan\nDaten\n\n\n\n\nx\nx\nx",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>\"Geschichten in Daten – finden und erzählen\"</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#über-dieses-material",
+    "href": "index.html#über-dieses-material",
+    "title": "UdK Infoklasse: Datenjournalismus Sommersemester 2026",
+    "section": "Über dieses Material",
+    "text": "Über dieses Material\nDieses Seminarmaterial wurde gebaut mit Quarto, für die Webansicht mit dem Theme “Yeti”. Die Grafiken kommen von undraw.com und dürfen von allen für alles frei verwendet werden. Vielen Dank dafür!\nUnd als Notizzettel: Die Fokus-Farbe ist #008cba.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>\"Geschichten in Daten – finden und erzählen\"</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-16_intro.html",
+    "href": "2026-04-16_intro.html",
+    "title": "Überblick",
+    "section": "",
+    "text": "→ Was machen wir in diesem Seminar?\nWir lernen mit vielen praktischen Übungen und kompaktem theoretischem Input, wie man Geschichten in Daten findet. Dazu lernen wir unsere Rechner und das Internet besser kennen. Insbesondere schauen wir uns an, wie und wo man Daten findet, wie man eigene Datensätze erstellt und wie man Erkenntnisse aus Daten kommuniziert.\nWichtig: Wir versuchen uns auch an Visualisierungen. Weil es dazu aber viele andere Kurse gibt, konzentrieren wir uns darauf, die richtige Visualisierung auszuwählen und zu lernen, wie wir Daten dafür strukturieren.\n🌍 Das Wissen ist da – ich helfe euch dabei, es zu verstehen und anwenden zu können.\n🪑 Die Idee: Wir nutzen die Zeit im Seminarraum möglichst gut, damit ihr rausgeht und die Grundlagen sicher beherrscht.\n🚀 Wer mehr will: Ich empfehle euch Ressourcen und Material, um noch tiefer einzusteigen.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Überblick</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-16_intro.html#semesterplan",
+    "href": "2026-04-16_intro.html#semesterplan",
+    "title": "Überblick",
+    "section": "Semesterplan",
+    "text": "Semesterplan\n\n\n\nDatum\nThema\nLink\n\n\n\n\n16.04.2026\nEinführung\nKapitel Daten\n\n\n23.04.2026\nWorkflow & Werkzeuge\nKapitel Daten\n\n\n30.04.2026\nIch habe Daten, was jetzt?\nKapitel Daten\n\n\n07.05.2026\nIch habe eine Frage, aber keine Daten – was jetzt?\nKapitel Daten\n\n\n21./22.05.2026\nProjektblock 1 – eigene Fragestellung\nKapitel Daten\n\n\n04.06.2026\nFeedback\nKapitel Daten\n\n\n11.06.2026\nWebscraping\nKapitel Daten\n\n\n18.06.2026\nKartendaten\nKapitel Daten\n\n\n25.06.2026\nStorytelling\nKapitel Daten\n\n\n02.07.2026\nDatenjournalistische Dramaturgie\nKapitel Daten\n\n\n09.07.2026\nText\nKapitel Daten",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Überblick</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-16_intro.html#eckpunkte-erwartungen",
+    "href": "2026-04-16_intro.html#eckpunkte-erwartungen",
+    "title": "Überblick",
+    "section": "Eckpunkte – Erwartungen",
+    "text": "Eckpunkte – Erwartungen\nIn der Einführungssitzung haben wir darüber gesprochen, was ihr euch wünscht – daran werde ich das Angebot ausrichten.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Überblick</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-23_werkzeuge.html",
+    "href": "2026-04-23_werkzeuge.html",
+    "title": "Workflows & Werkzeuge",
+    "section": "",
+    "text": "Beispiel: “Wie Europa seinen Solarboom finanziert”\nvon Kira Schacht / Deutsche Welle 🔗 Deutsch 🔗 English\nFragen zum Lesen:\nWas man daraus lernen kann:",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Workflows & Werkzeuge</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-23_werkzeuge.html#beispiel-wie-europa-seinen-solarboom-finanziert",
+    "href": "2026-04-23_werkzeuge.html#beispiel-wie-europa-seinen-solarboom-finanziert",
+    "title": "Workflows & Werkzeuge",
+    "section": "",
+    "text": "Was gefällt dir (nicht)? Warum?\nWas interessiert dich? Was langweilt dich?\nWenn du fertig bist: Was ist hängen geblieben?\n\n\n\nWir Menschen lieben Geschichten – vor allem über Menschen. Daten können uns zu diesen interessanten Menschen und ihren Geschichten führen.\nFür unterschiedliche Aussagen eigenen sich unterschiedliche Arten von Grafiken.\nGrafiken müssen in den Text eingebunden sein. Sie sind Teil des Textes, kein “nettes Extra”. (Auch im Sinne der Barrierefreiheit ist die zentrale Aussage einer Grafik aber auch im Text.)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Workflows & Werkzeuge</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-23_werkzeuge.html#storytelling-die-grundlagen",
+    "href": "2026-04-23_werkzeuge.html#storytelling-die-grundlagen",
+    "title": "Workflows & Werkzeuge",
+    "section": "Storytelling – Die Grundlagen",
+    "text": "Storytelling – Die Grundlagen\n\n\n\n\n\n\n1. Was ist eine Geschichte?\nGute Frage, hierzu könnte man ein eigenes Studium machen. Oder man nimmt die Abkürzung und liest ein Buch wie beispielsweise “Storytelling” von Sven Preger, der vor allem Audio-Geschichten erzählt, z.B. für den Deutschlandfunk oder den WDR. Darin steht:\n“Eine Geschichte besteht in aller Regel aus drei Basis-Elementen: eine aktiv-handelnde Person, ein konkretes Ziel und (etliche) Widerstände.\nEs gibt viele Möglichkeiten, diese Basis-Elemente zu strukturieren. In der Erzähltheorie gibt es verschiedene Modelle, wie Handlungen strukturiert sein können. Ganz klassisch, wie in den Dramen von Goethe und Schiller lernt man in der Schule oft den Aufbau, der sich bis auf Sophokles im antiken Griechenland zurückführen lässt: auslösendes Moment im ersten Akt, Zuspitzung des Konflikts im zweiten Akt, Herausforderung im dritten, Höhepunkt im vierten und dann die Auflösung im fünften Akt. Hier eine Abbildung aus einem mehr oder weniger zufällig ausgewählten Lehrbuch (Harzer 2017, S. 197):\n\n\n\n\n\nInsbesondere in der Filmindustrie ist mittlerweile aber auch das Konzept der “Heldenreise” verbreitet, hier dargestellt von Sven Preger in seinem Buch “Storytelling” (S. 74):\n\nDas ist natürlich ganz schön detailliert und komplex. Um die eigene Geschichte zu strukturieren, schlägt Sven Preger deshalb, kurz und prägnant, einen Erzählsatz vor:\n\n“A (der Protagonist) will B (seine Absicht/sein Ziel), weil er C (die Motivation), stößt aber auf D (Hindernisse). Diese Hindernisse muss der Protagonist überwinden, oder es zumindest versuchen. Der Erzählsatz ist damit der Kompass, an dem sich die Geschichte ausrichtet.”\n\n\n\n2. Was ist eine Nachricht?\nJetzt soll eine Geschichte ja in unserem Fall nicht fiktional sein, sondern vor allem Wissen vermitteln. Aber was ist überhaupt relevant, und damit vermittelnswert?\nIm Journalismus gibt es unterschiedliche Darstellungsformen. Grob unterteilt man in informierende und meinungsäußernde Formen. Informierend sind Nachrichten, Reportagen, Interviews oder Korrespondentenberichte. Meinungsäußernd ist zum Beispiel der Kommentar.\nEine Nachricht sollte möglichst viele der sieben wichten Fragen beantworten – diese können wir verwenden, um Fragen an unsere Daten zu entwickeln:\n\nWer? (Wer hat am meisten…? Wer hat am wenigsten…?)\nWas? (Was ist anders als vielleicht angenommen?)\nWo? (Wo häufen sich die Ereignisse?)\nWann? (Wann hat sich etwas verändert? Wie hat sich etwas entwickelt?)\nWie? (Wie hängen x und y zusammen?)\n(Warum?)\nWoher? (Woher kommen die Daten? Wer hat sie mit welchem Interesse erhoben?)\n\n(siehe Einführung in den praktischen Journalismus)\n\n\n\n\n\n\nNotePraktische Probe, ob eine Nachricht relevant ist\n\n\n\nDer “Küchenzuruf”: Eine Zusammenfassung der zentralen Aussage in maximal zwei Sätzen. Der Begriff wurde vom Stern-Redakteur Henri Nannen geprägt und durch eine beispielhafte Situation erklärt, in der ein gewisser Hans im Esszimmer den ‚Stern‘ liest, während „Frau Grete“ in der Küche „sich die Schürze umbindet, um sich für den Abwasch vorzubereiten“. Nach „beendigter Lektüre“ ruft Hans seiner Grete in die Küche zu: „Mensch Grete, die in Bonn spinnen komplett! Die wollen schon wieder die Steuern erhöhen!“\nDas würde man heute hoffentlich anders erklären, aber das Prinzip bleibt das gleiche:\n“Hey, hast du schon gehört? …!”",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Workflows & Werkzeuge</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-23_werkzeuge.html#grundprinzipien-der-datenarbeit",
+    "href": "2026-04-23_werkzeuge.html#grundprinzipien-der-datenarbeit",
+    "title": "Workflows & Werkzeuge",
+    "section": "Grundprinzipien der Datenarbeit",
+    "text": "Grundprinzipien der Datenarbeit\n\n\n\n\n\n\nWir verändern niemals Originaldaten.\nWir arbeiten möglichst nachvollziehbar, also möglichst nah am Original.\nWir dokumentieren unsere Arbeitsschritte, um sie reproduzieren zu können.\n\n\n→ Wir rechnen also mit Fehlern und arbeiten so, dass wir sie finden und korrigieren können.\n\n\nDas Ding mit der Objektivität…\nDie Vorstellung, Journalismus müsse “neutral” sein, ist weit verbreitet. Tatsächlich steht im Medienstaatsvertrag aber kein Wort von Neutralität in Bezug auf den Journalismus. Stattdessen sind die öffentlich-rechtlichen Medienanstalten verpflichtet zur “unabhängigen, sachlichen, wahrheitsgemäßen und umfassenden Information und Berichterstattung”. (Kann man nachlesen oder in sechs Minuten hier nachhören.)\nEin verbreitetes Zitat stammt von dem Fernseh-Journalisten Hanns Joachim Friedrichs: “Einen guten Journalisten erkennt man daran, dass er sich nicht gemein macht mit einer Sache, auch nicht mit einer guten Sache.” Das kann ohne Kontext aber leicht missverstanden werden und wird immer wieder diskutiert. Die beste Einordnung liefert ein Text von Uebermedien. Der Kern: Journalist*innen müssen berichten über alles, was in der Welt passiert. Und dürfen sich davon nicht überrollen lassen. Sonst könnten sie ihren Job nicht machen.\nWie sich Journalist*innen, insbesondere im öffentlich-rechtlichen Rundfunk, äußern dürfen, wird immer wieder angegriffen. Aktuell beispielsweise in Bayern mit Reformplänen für ein neues Rundfunkgesetz. Das will unter anderem im Prinzip eine “Informationsquote” fürs Fernsehen vorschreiben. Aber auch die Zivilgesellschaft soll sich möglichst nicht “politisch” äußern – das Demokratieförderprogramm soll gerade unter Leitung von Ministerin Karin Prien “in die Mitte” gerückt werden. Hier gut erklärt in einem Artikel der Zeit. Was bleibt: Alleine die permanente Unterstellung, dass Institutionen, die sich für ein vielfältiges und friedliches Miteinander einsetzen, “links” sind, verunsichert.\nUmso wichtiger ist gute Arbeit – und erklären, was gute Arbeit ist. Im Kontext von Daten heißt das:\n\n\n\n\n\n\nNoteLeitlinien\n\n\n\nEs gibt viele allgemein akzeptierte Regeln für zuverlässige Recherche. Hier sind ein paar:\n\nBemühe dich, alle relevanten Quellen zu finden.\nLasse keine Quelle unter den Tisch fallen, nur weil sie etwas anderes behauptet, als du dir erhofft hast.\nMache deinen Quellen transparent.\nZitiere korrekt und ohne Aussagen aus dem Kontext zu reißen.\nFormuliere deine Erkenntnisse so deutlich und konkret wie möglich.\nWeise ehrlich darauf hin, was du nicht herausfinden konntest.\nLasse einen unabhängigen Experten über deine Arbeit schauen, bevor du sie publizierst.\n\n(vgl. Sengers and Hunter 2018, S. 20f)\n\n\nDenn ganz wichtig: Daten brauchen Kontext. Und der muss mitgedacht werden! Sonst wird es unangenehm, wie für Innenminister Alexander Dobrindt 2025 zum Verfassungsschutzbericht. Der Bericht von T-Online zeigt gut, wie zwei gleich aussehende Grafiken unterschiedliche Skalen hatten:",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Workflows & Werkzeuge</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-23_werkzeuge.html#wie-plane-ich-ein-datenprojekt",
+    "href": "2026-04-23_werkzeuge.html#wie-plane-ich-ein-datenprojekt",
+    "title": "Workflows & Werkzeuge",
+    "section": "Wie plane ich ein Datenprojekt?",
+    "text": "Wie plane ich ein Datenprojekt?\n\n\n\n\n\n\nBeispielablauf\n\nIdee: Irgendjemand hat eine Idee…\nDatenrecherche: Welche Daten gibt es?\nQuellenkritik: Was können die Daten sagen, was nicht?\nHypothesen finden: “Drehbuch der Recherche”\nDaten analysieren: Hypothesen prüfen\nDaten einordnen lassen: Expert*innen suchen, Interviews und Hintergrundgespräche führen\nVeröffentlichung planen: Grafiken entwerfen, texten\nErgebnisse verifizieren: mindestens 4-Augen-Check",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Workflows & Werkzeuge</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-23_werkzeuge.html#übung-hundebiss-statistik-berlin-2024",
+    "href": "2026-04-23_werkzeuge.html#übung-hundebiss-statistik-berlin-2024",
+    "title": "Workflows & Werkzeuge",
+    "section": "🏋 Übung: Hundebiss-Statistik Berlin 2024",
+    "text": "🏋 Übung: Hundebiss-Statistik Berlin 2024\n\n\n\n\n\n“Gestern hat ein Hund einen Menschen schwer verletzt. Passiert sowas eigentlich öfter?”\n\n1. 🔍 Datenrecherche: Welche Daten gibt es?\n\n\nSuchtipps anzeigen\n\n\nSuchmaschine → Website Berlin\ngovdata.de → Datensatz zum Download\n\n\n\nWir mögen CSV-Dateien\n\ngrößter Vorteil: klein\nsehr schlicht, können eigentlich alle Programme öffnen\nNachteil: speichern keinen Kontext\n\n\n\n\n2. 📐 Quellenkritik: Was können die Daten sagen, was nicht?\n\nWas sind die aktuellsten verfügbaren Daten – in welchen Zyklen werden frische Daten veröffentlicht?\nKönnte es ein, dass bis zur geplanten Veröffentlichung aktualisierte Daten bereitstehen?\nWie zuverlässig sind die Daten – kommen sie möglichst direkt von der Erhebungsstelle?\nWas wissen wir über die Daten – gibt es Kontext-Informationen?\n\n\n\n3. 🤔 Hypothesen finden: “Drehbuch der Recherche”\n\nWelche Hunde haben die meisten Menschen verletzt?\nWelche Hunde haben im Verhältnis zu allen Menschen, die sie verletzt haben, die meisten Menschen schwer verletzt?\nWelche Hunde, die nicht als gefährlich gelten, haben mehr Menschen verletzt, als solche, die als gefährlich gelten?\n\n\n\n4. 🛠 Daten analysieren: Hypothesen prüfen\n\nHier: Summen bilden, Anteile ausrechnen\n\n\n\n5. 💬 Daten einordnen lassen: Interviews & Hintergrund\n\nGibt es einen Kontakt zur datenveröffentlichenden Stelle – wer ist fachlich zuständig?\nWelche Expert*innen beschäftigen sich noch mit den Daten und können in einem Hintergrundgespräch die Methodik einordnen?\n\n\n\n6. ✍️ Veröffentlichung planen: Grafiken entwerfen, texten\n\nWas ist interessant?\nDie richtige Grafik zur Aussage finden: \n\n🔗 The Visual Vocabulary, developed and published by Financial Times (FT)\n🔗 Datawrapper: “A friendly guide to choosing a chart type”\n🔗 Storytelling with Data: “SWD Chart Guide”\n\nEmpfehlung für Visualisierungen: Datawrapper\n\n\n\n7. 👀 Ergebnisse verifizieren: mindestens 4-Augen-Check\n\nAussagen auf Plausibilität prüfen\ndokumentierte Schritte nachvollziehen\n\n\n\n\n\n\n\nWarningWie lange dauert’s denn nun?\n\n\n\nInoffizielle Faustregel 😉: Doppelt so lange, wie du denkst + 1 Tag.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Workflows & Werkzeuge</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-23_werkzeuge.html#datenquellen",
+    "href": "2026-04-23_werkzeuge.html#datenquellen",
+    "title": "Workflows & Werkzeuge",
+    "section": "Datenquellen",
+    "text": "Datenquellen\n\n\n\n\n\n\nStatistisches Bundesamt\nStatistische Landesämter\ngovdata.de – Daten von Behörden, Kommunen, etc.\nDrucksachen Bundestag\nGoogle Dataset Search\n\n\nWelche Daten dürfen wir benutzen?\n“Open Data” ist ein feststehender Begriff seit vielen Jahren. In Deutschland gibt es dafür verschiedenste Regelungen, aber keine umfassende Verpflichtung, dass öffentliche Einrichtungen offene Daten verfügbar machen müssen. Dabei bedeutet das, dass man Daten frei nutzen kann, ohne weitere Einschränkungen:\n\n“Open means anyone can freely access, use, modify, and share for any purpose (subject, at most, to requirements that preserve provenance and openness).”\nhttps://opendefinition.org/\n\nIn der Praxis ist das in Deutschland oft anders umgesetzt und die datenveröffentlichende Stelle verlangt ihre Nennung. Das regelt die jeweilige Lizenz:\n\n“Gemeinfreiheit” CCO\nCC BY 4.0\n“Datenlizenz Deutschland” BY, Zero\n\ngovdata.de rät zu CC-Lizenzen",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Workflows & Werkzeuge</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-23_werkzeuge.html#übung-hundebiss-statistik-rheinland-pfalz-2024",
+    "href": "2026-04-23_werkzeuge.html#übung-hundebiss-statistik-rheinland-pfalz-2024",
+    "title": "Workflows & Werkzeuge",
+    "section": "🏋 Übung: Hundebiss-Statistik Rheinland-Pfalz 2024",
+    "text": "🏋 Übung: Hundebiss-Statistik Rheinland-Pfalz 2024\n\n\nSuchtipps anzeigen\n\n\nGoogle-Suche: “innenministerium rheinland pfalz hund filetype:pdf 2024”\n🔗\n\n\n\n\nBeispiel-Bericht anzeigen\n\n“Zahl der Verletzten durch Hundebisse in Berlin zurückgegangen” rbb24.de",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Workflows & Werkzeuge</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-23_werkzeuge.html#tools-um-tabellen-aus-pdfs-zu-extrahieren",
+    "href": "2026-04-23_werkzeuge.html#tools-um-tabellen-aus-pdfs-zu-extrahieren",
+    "title": "Workflows & Werkzeuge",
+    "section": "Tools, um Tabellen aus PDFs zu extrahieren",
+    "text": "Tools, um Tabellen aus PDFs zu extrahieren\n\ntabula Download oder gehostet (öffentlich!!)\nmit der Programmiersprache Python: camelot / excalibur\nfür komplexere Dokumente, Python-Kenntnisse nötig: docling",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Workflows & Werkzeuge</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-23_werkzeuge.html#wie-finde-ich-tools",
+    "href": "2026-04-23_werkzeuge.html#wie-finde-ich-tools",
+    "title": "Workflows & Werkzeuge",
+    "section": "Wie finde ich Tools?",
+    "text": "Wie finde ich Tools?\n\nalternativeto.net: Einstellungen: “Open Source” + eigenes Betriebssystem\ngithub.com: Code-Plattform (gehört Microsoft), die kuratierte “awesome”-Listen hat, z.B. https://github.com/topics/awesome-list\nabgucken bei anderen:\n\nDeutsche Welle Datenteam,\nBayerische Digitalagentur Byte Bayern\n30DayMapChallenge, 30DayChartChallenge",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Workflows & Werkzeuge</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-23_werkzeuge.html#übung-hundebiss-statistik-berlin-über-die-jahre",
+    "href": "2026-04-23_werkzeuge.html#übung-hundebiss-statistik-berlin-über-die-jahre",
+    "title": "Workflows & Werkzeuge",
+    "section": "🏋 Übung: Hundebiss-Statistik Berlin über die Jahre",
+    "text": "🏋 Übung: Hundebiss-Statistik Berlin über die Jahre\n\n\n\n\n\nWir erinnern uns: Auf govdata.de gab es Datensätze bis 2016 zurück…\nHerausforderungen: - wir müssen die alle runterladen (= scraping) - idealerweise brauchen wir das in einer Datei (= coding)\n\nSchritt 1: Links zu csv-Dateien sammeln\n\nBrowser öffnen + Developer-Tools ausklappen (Win/Linux: Ctrl + Shift + I or F12; macOS: Cmd + Opt + I)\nGanz links in der Ecke auf das Icon mit Rechteck und Cursor klicken (Win/Linux: Ctrl + Shift + C; macOS: Cmd + Opt + C)\njetzt zu einem csv-Button navigieren und anklicken\n\n\n\nSchritt 3: R installieren\nR-Download\n\n\nSchritt 4: RStudio installieren\nRStudio-Download\n\n\nSchritt 5: R-Projekt anlegen\nEmpfehlung für eine Ordnerstruktur:\n├── code\n├── data\n│   ├── raw\n│   ├── helpers\n│   ├── processed\n│   └── final\n└── report\n    ├── img\n    └── docs\nanlegen:\n\nAnwendung “Terminal” suchen → öffnen\nein paar Befehle ausprobieren:\n\n\nls -l listet alle Ordner und Dateien auf, mit ein paar Metadaten\ncd /hier/ein/pfad/zum/ordner springt zu einem Ordner\npwd zeigt an, in welchem Ordner man sich gerade befindet\nalle Ordner wie oben anlegen: 🪄\n\nmkdir -p code data/raw data/helpers data/processed data/final report/img report/docs\n\n\nSchritt 6: Code kopieren, ausführen, glücklich werden\n\n\nCode anzeigen\n\n\n# load libraries\nlibrary(stringr)\n\n# read html\nhtml &lt;- read_html(\"https://www.govdata.de/suche/daten/hundebiss-statistik-berlin\")\n\n# extract all links\nlinks &lt;- html |&gt; \n  html_elements(\"a\") |&gt; \n  html_attr(\"href\")\n\n# filter links if they end with \".csv\"\ncsv_links &lt;- links[str_detect(links, \".csv$\")]\n\n# download all csv files\nfor (u in csv_links) {\n  download.file(u, file.path(here::here(\"data/raw\"), basename(u)))\n}",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Workflows & Werkzeuge</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-23_werkzeuge.html#langeweile",
+    "href": "2026-04-23_werkzeuge.html#langeweile",
+    "title": "Workflows & Werkzeuge",
+    "section": "Langeweile?",
+    "text": "Langeweile?\n\nWeiterlesen / -hören\n\nStorytelling:\n\nSven Preger (2024): “Geschichten erzählen : Storytelling für Radio und Podcast”\nBR kontrovers (2025): “Bauen im Überschwemmungsgebiet, Unterwegs mit der Dorfpolizei und mehr”\n\nDatenjournalismus:\n\nChristina Elmer, Lorenz Matzat (Hrsg.): “Handbuch Daten und KI im Journalismus”\n\nJournalismus allgemein:\n\nGabriele Hooffacker, Klaus Meier (2026): “La Roches Einführung in den praktischen Journalismus”\nMaria Ressa (2022): “How to stand up to a dictator”\nPodcast: Anja Reschke im Hotel Matze (2025): “Welche Aufgabe hat der Journalismus”\n\n\n\n\nAusprobieren\n\nimmer nett: Was waren die häufigsten Vornamen, z.B. in Rostock oder Berlin\n\n\n\n\n\n\n\nHarzer, Friedmann. 2017. Literarische Texte Interpretieren : Lyrik - Prosa - Drama. Vol. 4634. UTB. Paderborn ; Wilhelm Fink.\n\n\nSengers, Luuk, and Mark Lee Hunter. 2018. Drehbuch Der Recherche: Das Verborgene Szenario: Journalistische Recherchen Planen Und Organisieren. Nr-Werkstatt 25. Berlin: Netzwerk Recherche.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Workflows & Werkzeuge</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-30_aufbereitung.html",
+    "href": "2026-04-30_aufbereitung.html",
+    "title": "Daten aufbereiten",
+    "section": "",
+    "text": "Ich habe Daten – was jetzt?",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Daten aufbereiten</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-30_aufbereitung.html#beispiel-warum-sich-immer-mehr-menschen-krankmelden",
+    "href": "2026-04-30_aufbereitung.html#beispiel-warum-sich-immer-mehr-menschen-krankmelden",
+    "title": "Daten aufbereiten",
+    "section": "Beispiel: “Warum sich immer mehr Menschen krankmelden”",
+    "text": "Beispiel: “Warum sich immer mehr Menschen krankmelden”\nvon Sophie Menner, Julia Barthel, Kirsten Girschick, Josef Schön\nbr24.de / tagesschau.de\n\n\n\n\n\nHintergrund:\n\nGrundlage für diese Recherche war die Idee, den Eindruck “irgendwie sind immer mehr Menschen öfter krank, vor allem mit Husten und Schnupfen” näher zu beleuchten. Dafür haben wir Krankenkassen angefragt, ob sie uns Zahlen zu Krankschreibungen (“Arbeitsunfähigkeitsmeldungen”) geben können. Die haben wir schließlich vom BKK-Dachverband bekommen – aufgeschlüsselt nach Geschlecht, Beruf, Landkreis und Krankheitsgruppe (ICD-10-Code).\nDiese Daten haben wir ausgewertet und sehr, sehr viele Arbeitsgrafiken erstellt, um einen Überblick zu bekommen, was relevant sein könnte. Damit haben wir vorsortiert und dann redaktionell die wichtigsten Thesen herausgearbeitet.\n\nWas wir daraus lernen können:\n\nGleiche Datengrundlage und Recherche, unterschiedliche Texte, jeweils auf eine andere Zielgruppe zugeschnitten.\nDie Struktur des Textes hängt auch von der (vermuteten) Erwartungshaltung des Publikums ab.\nDas Visualisierungstool beeinflusst auch die Auswahl der Grafiken.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Daten aufbereiten</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-30_aufbereitung.html#übung-musik-us-charts",
+    "href": "2026-04-30_aufbereitung.html#übung-musik-us-charts",
+    "title": "Daten aufbereiten",
+    "section": "Übung: Musik – US-Charts",
+    "text": "Übung: Musik – US-Charts\nSeit 1958 veröffentlicht das US-Magazin “Billboard” jeden Dienstag die “beliebtesten” Songs – basierend auf Verkäufen, Airplay und Streaming der jeweiligen Erfassungswoche. Alle Top-Titel hat Chris Dalla Riva für seinen Blog und sein Buch zusammengetragen und freundlicherweise als Google-Tabelle veröffentlicht: Billboard Hot 100 Number Ones Database.\n→ Welche Geschichten lassen sich darin finden?\n\n\n\nMögliche Fragen\n\n\nWie viele männliche und weibliche Akteur*innen gibt es: Artists, Songwriter, Producer? → gruppieren nach Spalte Artist Male (Y) und zählen\nWas der Zusammenhang zwischen der Dauer auf Platz 1 und dem Overall Rating? → Spalten D und I, visuell auswerten: Scatter Plot mit Dauer auf x- und Overall Rating auf y-Achse\nSpiegeln sich globale Ereignisse im Happiness-Score der Charts wieder? → Spalte AT + Datum visuell vergleichen: Punkte auf x-Achste + eingezeichnete historische Ereignisse\nHatte der Vietnamkrieg andere BPM als die 2000er? → Spalte AQ visuell mit vorher recherchierten und festgelegten Zeitspannen abgleichen: BPM und Zeitspannen, Verlauf in Kurven, ggf. berechnen, indem man für die jeweiligen Zeiten das Integral der Kurven ausrechnet?\nWie haben sich Songs hinsichtlich Dancability verändert über die Zeit? → Spalten AS und C visuell vergleichen: Scatterplot, x-Achse mit der Zeit, y-Achse Dancability; historische Ereignisse ergänzen\nIm Laufe der Jahre, wie oft sind die Songwriter auch die Artists – gibt es mehr oder weniger Ghostwriter? → Spalten AF und AG, gruppieren nach Jahr, dann nach Songwriter-Spalte, die dann zählen\nÜber was wird gesungen? Welche Schlagwörter kommen wann häufiger vor? (z.B. dad vs father) → Spalten CK und CL, pro Jahr nach Wörtern gruppieren (Häufigkeit jedes Worts) und zählen, dann alle “und”-bla-Wörter rausstreichen und dann gucken, was am häufigsten vorkommt und spannend ist\nWelchen Zusammenhang gibt es zwischen Dancability und Happiness? → Spalten AS und AT im Scatterplot visuell vergleichen\nVon welchem (Parent-)Label kommen die meisten Hits und hat sich das über die Zeit verändert? → Spalten K, L und C, gruppieren nach Jahr und Label und ggf. kleine Labels zusammenfassen\nVon welchem (Parent-)Label kommen die Hits mit der meisten Dauer auf Platz 1 und hat sich das über die Zeit verändert? → Spalten K, L, D und C, gruppieren und über die Zeit anschauen\nSind die Hits heutzutage für Filme komponiert oder gab es sie bei der Filmproduktion schon und sie wurden gezielt ausgewählt? → Spalten CS und CT, neue (Pivot-)Tabelle erstellen: Jahr der Veröffentlichung, nach CS / CT, gruppieren + zählen\n… wie oben, aber für Fernsehshows: komponiert oder ausgewählt? → Spalten CU und CV gruppieren und zählen\nWie werden die Hits durch Streaming beeinflusst in Bezug auf Länge, BPM etc.? → zusätzliche Daten zum Streaming nötig\nIn welchem Jahrzehnt gab es die meiste explizite Sprache? → Spalten CO und C; extra Spalte mit Jahrzehnt anlegen, darauf gruppieren + zählen\n\n\nEin Beispiel für eine Musik-Geschichte:\n\nThe Pudding, “Love Songs, RIP”",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Daten aufbereiten</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-30_aufbereitung.html#übung-wein",
+    "href": "2026-04-30_aufbereitung.html#übung-wein",
+    "title": "Daten aufbereiten",
+    "section": "Übung: Wein",
+    "text": "Übung: Wein\nDer brasilianische Informatik-Professor Rogério Xavier de Azambuja hat 2022 einen großen Datensatz erstellt mit Weinen und “Metadaten”, z.B. wie gern die Weine getrunken werden, woher sie kommen oder zu welchen Gerichten sie passen. Dieser Datensatz ist auf GitHub (kleinere Test-Version mit 100 Einträgen) oder in einem Google-Drive verfügbar. Zum Einstieg eignet sich diese csv-Datei.\n→ Was verraten uns die Daten über die Welt der Weine – und welcher wurde am besten bewertet?\n\n\n\n\n\n\n\nMögliche Fragen\n\n\nIn welchen Ländern werden welche Rebsorten besonders viel angebaut? → Spalten E und K, gruppieren, zählen und sortieren nach höchster Anzahl\nGibt es einen Zusammenhang zwischen Region und Acidity (Säuregehalt)? → Spalten M und I auf interaktiver Karte darstellen, dazu nach Region gruppieren und Acidity auswerten\nGibt es einen Zusammenhang zwischen Region und ABV (Alkoholgehalt)? → Spalten M und G, könnte man ebenfalls auf interaktiver Karte darstellen; dazu nach Region gruppieren und Alkoholgehalt auswerten\nGibt es einen Zusammenhang zwischen Alkoholgehalt und Geschmack (Body)? → Spalten G und H\nGibt es einen Zusammenhang zwischen den Grapes und dem Essen, mit dem es harmonized? → Spalten E und F\nWelcher “Type” ist am beliebtesten / kommt am häufigsten vor? → Spalte C gruppieren und zählen\nWelche Sorte hat die ältesten Jahrgänge? Welche die neuesten? Welche meisten? Welche die wenigsten?\nWie unterscheidet sich der durchschnittliche Alkoholgehalt je nach passendem Gericht? (Bei welchem Gericht ist es am wahrscheinlichsten, dass man hinterher mehr betrunken ist?)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Daten aufbereiten</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-30_aufbereitung.html#übung-stadtbaumkampagne-berlin",
+    "href": "2026-04-30_aufbereitung.html#übung-stadtbaumkampagne-berlin",
+    "title": "Daten aufbereiten",
+    "section": "Übung: Stadtbaumkampagne Berlin",
+    "text": "Übung: Stadtbaumkampagne Berlin\nIn Berlin werden im Rahmen der Stadtbaumkampgne jährlich Spenden gesammelt, um neue Bäume zu pflanzen. Mitte März bis Mitte April wurden bereits viele Bäume gepflanzt, die Senatsverwaltung für Mobilität, Verkehr, Klimaschutz und Umwelt veröffentlicht hier die Baumlisten.\n→ Welche Geschichten verstecken sich in den Listen?\n\n\n\nMögliche Fragen\n\n\nWas wird wo gepflanzt? → Baumarten zusammenfassen nach Straßen\nWas wurde am meisten neu gepflanzt? Allgemein und nach Stadtteilen → Baumarten (+ Stadtteile gruppieren und zählen)\nWelcher Stadtteil hat am meisten Diversität an Pflanzen? → zuerst Diversität definieren, z.B. prozentualer Anteil\nWie viel Durchmischung gibt es pro Straße? → ähnlich wie “Diversität”\nWo / in welcher Straße wird nur eine Baumart gepflanzt? → prozentualer Anteil = 100%\nWelche Bäume sind da schon – erhöht man die Diversität mit der Neupflanzung? (braucht zusätzliche Daten, welche Bäume schon vorhanden sind)\nWie dicht ist die Neubepflanzung? → nach Hausnummer-Abständen berechnen, aber eher unvollständig",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Daten aufbereiten</span>"
+    ]
+  },
+  {
+    "objectID": "2026-04-30_aufbereitung.html#wo-kann-man-nach-daten-stöbern",
+    "href": "2026-04-30_aufbereitung.html#wo-kann-man-nach-daten-stöbern",
+    "title": "Daten aufbereiten",
+    "section": "Wo kann man nach Daten stöbern?",
+    "text": "Wo kann man nach Daten stöbern?\n\n\n\n\n\n\n“Data Is Plural”, leider eingestellter Podcast + Newsletter, Archiv\nGitHub, z.B. Suche nach “awesome dataset”\nTidyTuesday, wöchentliche Challenge, die sich vor allem auf R bezieht\nkaggle as as very popular platform for data science (but I don’t like it, to me it seems often a bit… contextless?)\nreddit\nOur World in Data\ninternational / Ländervergleich: generell UN-Daten\n\nWeltgesundheitsorganisation WHO\nHumanitäre Daten der UN-Organisation OCHA",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Daten aufbereiten</span>"
+    ]
+  },
+  {
+    "objectID": "2026-05-07_sammeln.html",
+    "href": "2026-05-07_sammeln.html",
+    "title": "Daten sammeln",
+    "section": "",
+    "text": "Ich habe eine Frage, aber keine Daten",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Daten sammeln</span>"
+    ]
+  },
+  {
+    "objectID": "2026-05-07_sammeln.html#beispiel-freie-plätze-sind-rar-die-lage-in-bayerischen-frauenhäusern",
+    "href": "2026-05-07_sammeln.html#beispiel-freie-plätze-sind-rar-die-lage-in-bayerischen-frauenhäusern",
+    "title": "Daten sammeln",
+    "section": "Beispiel: “Freie Plätze sind rar: Die Lage in bayerischen Frauenhäusern”",
+    "text": "Beispiel: “Freie Plätze sind rar: Die Lage in bayerischen Frauenhäusern”\n2026: br24.de + CORRECTIV.Lokal → ndr.de, KATAPULT Sachsen, SWR…\n2023: correctiv.org\n\n\n\n\n\n→ Original-Website: frauenhaus-suche.de",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Daten sammeln</span>"
+    ]
+  },
+  {
+    "objectID": "2026-05-07_sammeln.html#übung-defekte-aufzüge-rolltreppen-in-münchen",
+    "href": "2026-05-07_sammeln.html#übung-defekte-aufzüge-rolltreppen-in-münchen",
+    "title": "Daten sammeln",
+    "section": "Übung: Defekte Aufzüge / Rolltreppen in München",
+    "text": "Übung: Defekte Aufzüge / Rolltreppen in München\n\n\n\n\n\nWebsite der Münchner Verkehrsgesellschaft MVG\nSchritt 1: Was wünscht sich die Website-Betreiberin – was dürfen wir automatisiert auslesen? → robots.txt\nSchritt 2: Wir schauen uns um: Was brauchen wir? → Developer-Tools öffnen (Rechtsklick oder Tastenkombination, je nach Browser + Betriebssystem) → Tipp: Interessant ist oft “Network → XHR”.\n\n\n\n\n\n\nNoteWas ist XHR?\n\n\n\nWebseiten bestehen technisch aus HTML-Code. Hier haken “echte Programmierer” gern ein und korrigieren: HTML ist aber nur eine Auszeichnungssprache, das hat nichts mit Code zu tun.\nStimmt: HTML heißt HyperTextMarkupLanguage und kann vor allem verschiedene Elemente auf einer Website darstellen: Eine Überschrift auf dem höchsten Level wird markiert mit &lt;h1&gt; am Anfang und &lt;/h1&gt; am Ende, eher eine Unterüberschrift mit &lt;h2&gt; und &lt;/h2&gt;, eine Unterunterüberschrift mit &lt;h3&gt; und &lt;/h3&gt; und so weiter…\nLinks sind oft interessant, die sind gekennzeichnet mit &lt;a href=\"https://example.com\"&gt;Hier klicken&lt;/a&gt;. Hier klicken steht dann in Link-Formatierung auf der Website. Der Teil in Anführungszeichen hinter href= ist die URL, wo man hingeleitet wird.\nWenn jetzt eine Website was “können” soll, sich also anpassen oder Daten laden, dann nutzt man dafür JavaScript. Das ist eine Programmiersprache, die beispielsweise “wenn, dann…”-Befehle ausführen kann: “Wenn drei Sekunden vorbei sind, dann zeigst du ein neues Bild an, lieber Browser.” Oder eben: “Wenn dieser Code geladen wird, dann hole bitte die Daten im Hintergrund von folgender Website.”\nUnd solche Daten werden dann im Hintergrund übertragen, ohne dass die Website neu geladen werden muss, mittels eines “XHR”, oder ausgeschrieben “XMLHttpRequest”. Der Server bekommt also eine Anfrage: Ey, gib mal Daten. Und zwar in verschiedenen Formaten, XML steht im Namen, kann aber auch JSON sein.\n\n\nSchritt 3: Wir schauen uns die reinen Daten im Rohformat “JSON” an: Schnittstelle\nSchritt 4: Wir speichern uns die Daten ab, um sie lokal weiterzuverarbeiten.\n\n\nR-Code ausklappen\n\n\nlibrary(jsonlite)\nlibrary(rrapply)\n\nx &lt;- fromJSON(\"https://www.mvg.de/.rest/mvgZoom/api/stations\", simplifyVector = FALSE)\n\ndf &lt;- x |&gt; \n  rrapply(how=\"melt\")",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Daten sammeln</span>"
+    ]
+  },
+  {
+    "objectID": "2026-05-07_sammeln.html#übung-drogerie-produkte",
+    "href": "2026-05-07_sammeln.html#übung-drogerie-produkte",
+    "title": "Daten sammeln",
+    "section": "Übung: Drogerie-Produkte",
+    "text": "Übung: Drogerie-Produkte\nWie viel kosten 100ml Sonnencreme im Durchschnitt und was ist der niedrigste Preis für 100ml Sonnencreme?\n\n\n\n\n\n\n\nCode anzeigen\n\nurl &lt;- \"https://product-search.services.dmtech.com/de/search/crawl?query=Gesicht&allCategories.id=020401&pageSize=30&searchType=editorial-search&sort=editorial_relevance&type=search-static&enablePharmacy=true\"\nx &lt;- fromJSON(url, simplifyVector = FALSE)\n\ndf &lt;- x |&gt; \n  rrapply(how=\"melt\")",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Daten sammeln</span>"
+    ]
+  },
+  {
+    "objectID": "2026-05-07_sammeln.html#übung-windkraft-bayern",
+    "href": "2026-05-07_sammeln.html#übung-windkraft-bayern",
+    "title": "Daten sammeln",
+    "section": "Übung: Windkraft Bayern",
+    "text": "Übung: Windkraft Bayern\nWenn es deutschlandweit um das Thema Windkraft geht, steht Bayn immer wieder besonders schlecht da (z.B. br24.de).\nAber wie ist die Situation wirklich? Welche Rolle spielt Strom aus Windkraft für Bayern?\n\n\n\n\n\nSchritt 1: Daten suchen\n\n\nLink zu Daten\n\nhttps://www.govdata.de/suche/daten/strom-aus-windenergie-statistik-bay\n\nSchritt 2: Datenformat verstehen\n\n\n\n\n\n\nNoteWas ist WMS?\n\n\n\nWMS steht für “Web Map Service” und ermöglicht es, Kartendaten von Servern abzurufen.\n\n\nSchritt 3: Software QGIS öffnen und WMS-Layer hinzufügen\nLayer → Add Layer → Add WMS/WMTS Layer → “New” → URL einfügen → OK",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Daten sammeln</span>"
+    ]
+  },
+  {
+    "objectID": "2026-05-21_struktur.html",
+    "href": "2026-05-21_struktur.html",
+    "title": "Ein Projekt strukturieren",
+    "section": "",
+    "text": "Heute geht’s um eure Projekte!\nDazu noch drei Punkte:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Ein Projekt strukturieren</span>"
+    ]
+  },
+  {
+    "objectID": "2026-05-21_struktur.html#geschichten-in-daten-finden-pfade-zum-erfolg",
+    "href": "2026-05-21_struktur.html#geschichten-in-daten-finden-pfade-zum-erfolg",
+    "title": "Ein Projekt strukturieren",
+    "section": "1. Geschichten in Daten finden – Pfade zum Erfolg",
+    "text": "1. Geschichten in Daten finden – Pfade zum Erfolg\nKleiner Reminder der verschiedenen Dimensionen, in denen sich eine Geschichte verstecken kann:\n\nStatus quo – Verhältnisse zwischen Gruppen\nRäumliche Verteilung\nZeitlicher Verlauf\n\n→ Dimensionen nicht vermischen, sondern jeweils die interessantesten Punkte finden:\n\nWelche Trends zeichnen sich ab?\nWo gibt es Ausreißer?",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Ein Projekt strukturieren</span>"
+    ]
+  },
+  {
+    "objectID": "2026-05-21_struktur.html#zeitmanagement-dokumentation",
+    "href": "2026-05-21_struktur.html#zeitmanagement-dokumentation",
+    "title": "Ein Projekt strukturieren",
+    "section": "2. Zeitmanagement & Dokumentation",
+    "text": "2. Zeitmanagement & Dokumentation\nWir arbeiten “iterativ”, also Schritt für Schritt, im Kreis, vor und zurück. Klingt fancy, aber was heißt das?\n\n\n\n\n\n\nNoteTipp: Pomodoro-Technik\n\n\n\n25 Minuten konzentriertes Arbeiten (Versinken ist okay)\n5 Minuten Pause – no matter, what\n\nvor der Pause ggf. Gedanken kurz aufschreiben (max. zwei Sätze)\nnach der Pause Reflexion mit frischem Blick: auf welchem Weg bin ich?\n\n\n\n\nDokumentation – Gedanken mitschreiben\nIst wie Tagebuch schreiben: Fühlt sich währenddessen überflüssig an, weil “ich weiß ja, was ich im Kopf hab”. Wird über die Zeit aber sehr wertvoll, weil man hinterher nachvollziehen kann, wo und warum man angefangen hat.\nTipp: Markdown verwenden – das ist schnell erlernbar und hinterher funktional einsetzbar. Die wichtigsten Symbole:\n# für die erste Überschrift\n\n## für die zweite Überschrift\n\ndieser Text ist **fett**\n\ndieser Text ist _unterstrichen_\n\nSo sieht ein [Link](example.org) aus \n\n- und das\n- ist eine\n- Aufzählung\n\n1. bzw. eine \n2. nummerierte\n3. Aufzählung\n\ntechnische Dinge wie `Code` kann man in sogenannte `Backticks` schreiben, dann bleibt das Format erhalten\n\n(oder drei mal ` für ganze Code-Blöcke)",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Ein Projekt strukturieren</span>"
+    ]
+  },
+  {
+    "objectID": "2026-05-21_struktur.html#kleine-datenquellenkunde",
+    "href": "2026-05-21_struktur.html#kleine-datenquellenkunde",
+    "title": "Ein Projekt strukturieren",
+    "section": "3. Kleine Datenquellenkunde",
+    "text": "3. Kleine Datenquellenkunde\n\n\n\n\n\n\nWer könnte das wissen? – Datenquellen finden\n\nGibt es jemanden, der diese Daten erheben muss (z.B. offizielle Stellen)?\nGibt es jemanden, der diese Daten erheben will (Wissenschaft, NGOs, Datennerds)?\n\n\n\noffene Daten\n\nStatistisches Bundesamt: destatis.de\nStatistische Landesämer: regionalstatistik.de\nStatistische Landesämter mit eigenen Websites (manchmal anders durchsuchbar, Daten anders gebündelt)\nPortal für alle möglichen Datensätze aus öffentlichen Behörden in Deutschland: govdata.de\nEuropean Data Portal\nEU Open Data Portal\nEurostat Database\nWeltbank\nIMF\nOECD\nUN Data\nDeutscher Wetterdienst\nNASA\nEuropäische Behörden, z.B. European Environment Agency (EEA): eea.eu\n\n\n\nselbst erhobene Daten\nbeispielsweise durch eigene Messungen\n\n\nexklusive Daten\n\nBehörden:\n\nArbeitsagentur\nUmweltbundesamt\n\nVerbände:\n\nMarburger Bund,\nMieterbund\n\nWissenschaft:\n\nSozioökonomisches Panel (SOEP)\n\nNGOs und Vereine:\n\nGreenpeace\nfragdenstaat.de\n\nVergleichsportale:\n\nCheck24\nVerivox\n\n\n\n\ngescrapte Daten\nbeispielsweise durch regelmäßiges, automatisiertes Speichern\n\n\nInformationsfreiheitsgesetz (IFG)\n\nRecht auf Zugriff auf amtliche Informationen für alle\nAlle Bundesbehörden sind zur Auskunft verpflichtet\nRecht auf Akteneinsicht\nLandes-IFGs prüfen\nWeitere Infos:\n\nFragen und Antworten zum Informationsfreiheitsgesetz \nFragDenStaat.de\n\n\nOb es wirklich einen Rechtsanspruch auf Daten gibt, ist in vielen Fällen fraglich – aber immer einen Versuch wert!",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Ein Projekt strukturieren</span>"
+    ]
+  },
+  {
+    "objectID": "2026-05-21_struktur.html#parlamentarische-dokumente-drucksachen",
+    "href": "2026-05-21_struktur.html#parlamentarische-dokumente-drucksachen",
+    "title": "Ein Projekt strukturieren",
+    "section": "Parlamentarische Dokumente (Drucksachen)",
+    "text": "Parlamentarische Dokumente (Drucksachen)\n\nKleine Anfragen (🪦 RIP kleineAnfragen.de)\nSchriftliche Fragen\nAnträge\nGesetze(sentwürfe)\nPlenarprotokolle\nDatensätze zu Abstimmungsverhalten und Stammdaten\n\n\n\n\n\n\n\nNoteGrundsätzliche Fragen an jeden Datensatz\n\n\n\n\nUrheber, Herkunft, Motiv: Wer hat die Daten wie erhoben? (Wer profitiert?)\nTransparenz: Was erfahre ich an Zusatzinfos zu den Daten?\nAktualität: Sind die Daten aktuell? Überprüfung?\n\nRelationen: Welche Datenpunkte kann ich miteinander vergleichen?\nRelevanz: Welche Daten sind wirklich relevant?\nAbgleich: Welche alternativen (besseren) Datenquellen gibt es zur Überprüfung?\n\n\n\nInterner Link zu Dokumenten",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Ein Projekt strukturieren</span>"
+    ]
+  },
+  {
+    "objectID": "2026-06-04_feedback.html",
+    "href": "2026-06-04_feedback.html",
+    "title": "Projekt ist fertig – wir blicken zurück",
+    "section": "",
+    "text": "Wann ist ein Projekt abgeschlossen?\n!–\nDas Problem: Besser geht immer.\n“Fertig” ist also vor allem, wenn",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Projekt ist fertig – wir blicken zurück</span>"
+    ]
+  },
+  {
+    "objectID": "2026-06-04_feedback.html#wann-ist-ein-projekt-abgeschlossen",
+    "href": "2026-06-04_feedback.html#wann-ist-ein-projekt-abgeschlossen",
+    "title": "Projekt ist fertig – wir blicken zurück",
+    "section": "",
+    "text": "eine abgegrenzte, vorab formulierte Frage beantwortet wurde.\ndie verfügbare Zeit abgelaufen ist.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Projekt ist fertig – wir blicken zurück</span>"
+    ]
+  },
+  {
+    "objectID": "2026-06-04_feedback.html#besser-werden",
+    "href": "2026-06-04_feedback.html#besser-werden",
+    "title": "Projekt ist fertig – wir blicken zurück",
+    "section": "Besser werden",
+    "text": "Besser werden\n!–\n\nDie Sicht von außen: Feedback geben\n\n\n\n\n\n\nNoteQualitätskritieren für eine gute Datengeschichte\n\n\n\n\nLese ich die Geschichte gerne?\nSind alle formalen Kritieren erfüllt? (Korrekte Quellenangabe, angemessene Überschrift, verständliche Farbgebung und Legende in Grafiken etc.)\nKönnen wir noch nachvollziehen, wie die Daten verarbeitet wurden?\nIst die Methodik angemessen und die Daten korrekt?\nSind die Grafiken gut gewählt für die Aussage?\n\n\n\n\n\nDie Sicht von innen: Manöverkritik\n\n1. Was ist gut gelaufen?\n\nWas beherrsche ich (gerade) gut? Sollte ich das dokumentieren, damit ich es auch in Zukunft kann?\nWas wirkte wie glücklicher Zufall – und was kann ich daraus lernen?\n\n\n\n2. Was waren meine größten Herausforderungen?\n\nWelche davon konnte ich lösen, was mache ich nächstes Mal anders?\nWelche davon konnte ich nicht lösen, womit sollte ich mich weiter beschäftigen?",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Projekt ist fertig – wir blicken zurück</span>"
+    ]
+  },
+  {
+    "objectID": "2026-06-11_webscraping.html",
+    "href": "2026-06-11_webscraping.html",
+    "title": "Webscraping",
+    "section": "",
+    "text": "Webscraping – was ist das?\nWir haben uns schon angeschaut, wie man Daten sammeln kann. Dazu haben wir den Netzwerk-Verkehr im Browser angeschaut – sowie entsprechenden Code, um einen Browser nachzuahmen.\nHeute geht’s tiefer: In den bisherigen Beispielen hatten wir Glück, dass die Daten gut aufbereitet vorlagen, in Form von json-Files. Das ist natürlich nicht immer so.\nGrob kann man die übrigens Fälle unterteilen in:\nDiese beiden Fälle schauen wir uns nacheinander an.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Webscraping</span>"
+    ]
+  },
+  {
+    "objectID": "2026-06-11_webscraping.html#webscraping-was-ist-das",
+    "href": "2026-06-11_webscraping.html#webscraping-was-ist-das",
+    "title": "Webscraping",
+    "section": "",
+    "text": "Informationen liegen gut sichtbar auf einer Webseite vor – und können daher gut ausgelesen werden. Manchmal hat man eine ganze Liste von Webseiten, von denen man die gleichen Informationen strukturiert speichern möchte.\nInformationen sind zwar auf einer Webseite sichtbar, aber erst nur teilweise und werden nachgeladen, indem man weiterscrollt oder auf Knöpfe drückt. Wir brauchen also Interaktivität.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Webscraping</span>"
+    ]
+  },
+  {
+    "objectID": "2026-06-11_webscraping.html#informationen-sind-auf-einer-webseite-verfügbar.",
+    "href": "2026-06-11_webscraping.html#informationen-sind-auf-einer-webseite-verfügbar.",
+    "title": "Webscraping",
+    "section": "1. Informationen sind auf einer Webseite verfügbar.",
+    "text": "1. Informationen sind auf einer Webseite verfügbar.\nAuf einer einfachen Website liegen Informationen immer strukturiert vor. Die Frage ist also vor allem, ob uns die technische Struktur hilft.\n\nTabellen\nVor allem Tabellen sind dabei sehr komfortabel, weil im html-Code eine feste Struktur für Tabellen definiert ist:\n&lt;TABLE summary=\"This table charts the number of cups of coffee consumed by each senator, the type of coffee (decaf or regular), and whether taken with sugar.\"&gt;\n&lt;CAPTION&gt;Cups of coffee consumed by each senator&lt;/CAPTION&gt;\n&lt;TR&gt;\n   &lt;TH&gt;Name&lt;/TH&gt;\n   &lt;TH&gt;Cups&lt;/TH&gt;\n   &lt;TH&gt;Type of Coffee&lt;/TH&gt;\n   &lt;TH&gt;Sugar?&lt;/TH&gt;\n&lt;TR&gt;\n   &lt;TD&gt;T. Sexton&lt;/TD&gt;\n   &lt;TD&gt;10&lt;/TD&gt;\n   &lt;TD&gt;Espresso&lt;/TD&gt;\n   &lt;TD&gt;No&lt;/TD&gt;\n&lt;TR&gt;\n   &lt;TD&gt;J. Dinnen&lt;/TD&gt;\n   &lt;TD&gt;5&lt;/TD&gt;\n   &lt;TD&gt;Decaf&lt;/TD&gt;\n   &lt;TD&gt;Yes&lt;/TD&gt;\n&lt;/TABLE&gt;\nAls Tabelle sieht das dann so aus:\n\n\nCups of coffee consumed by each senator\n\n\n\nName\n\n\nCups\n\n\nType of Coffee\n\n\nSugar?\n\n\n\nT. Sexton\n\n\n10\n\n\nEspresso\n\n\nNo\n\n\n\nJ. Dinnen\n\n\n5\n\n\nDecaf\n\n\nYes\n\n\n–\nFun fact: Dieses Beispiel hab ich mir nicht ausgedacht, sondern es kommt vom “World Wide Web Consortium”, aus der Beschreibung des html-Standards. Kann man hier alles nachlesen\nBeispiel: https://www.scrapethissite.com/pages/forms/\n\nlibrary(rvest)\n\npage &lt;- read_html(\"https://www.scrapethissite.com/pages/forms/\")\n\nraw_table &lt;- page |&gt; \n  html_element(\"table.table\") |&gt; \n  html_table()\n\n\n\nAndere, klar definierte Elemente\nPraktisch, weil sie oft relevant und gut markiert sind:\n\n&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;...: Überschriften\n&lt;a&gt;: Links\n&lt;li&gt;: “List items”, als Aufzählungen, entweder mit Gedankenstrichen (unordered list: &lt;ul&gt;) oder als nummerierte Liste (ordered list: &lt;ol&gt;)\n&lt;div&gt;, &lt;section&gt;...: generelle Container / Abschnitte…\n\nOft gibt es davon aber mehrere. Deshalb sind sie in der Regel in Klassen unterteilt, die mit in der spitzen Klammer angegeben sind, z.B. &lt;h1 class=\"Postanschrift\"&gt;.\nPraktisch für uns: aus der Kombination des Typs und der Klasse können wir ziemlich gut navigieren.\n\n\nMehrere Webseiten (mit gleicher Struktur)\nListen von Webseiten bekommt man auf verschiedenen Wegen:\n\n1. es gibt eine Übersicht der Webseiten (ggf. auch gescraped)\nBeispiel: https://museumsdienst-hamburg.de/museen-in-hamburg/\n\nlibrary(rvest)\nlibrary(tidyverse)\n\nhtml &lt;- read_html(\"https://museumsdienst-hamburg.de/museen-in-hamburg/\")\n\nhtml |&gt; \n  # html_elements(\"h3\") |&gt;\n  html_elements(\".link-invisible\") |&gt; \n  html_text()\n\nmuseum_links &lt;- html |&gt; \n  html_elements(\".post-item\") |&gt; \n  html_attr(\"href\")\n  \nfor (museum_link in museum_links){\n  print(str_glue(\"Processing museum with url: {museum_link}\"))\n  \n  museum_html_temp &lt;- read_html(museum_link)\n  \n  museum_name &lt;- museum_html_temp |&gt; \n    html_element(\"h1\") |&gt; \n    html_text()\n  \n  print(museum_name)\n  \n  museum_oeff &lt;- museum_html_temp |&gt; \n    html_elements(\".infobox\") |&gt; \n    pluck(3) |&gt; \n    html_elements(\"p\") |&gt; \n    pluck(2) |&gt; \n    html_text()\n  \n  print(museum_oeff)\n}\n\n\n\n2. “Weiterblättern”\nWir schauen uns nochmal die Scraping-Übungsseite an: [https://www.scrapethissite.com/pages/forms/]. Hier sind die einzelnen Informationen auf vielen Seiten verteilt. Wir müssen also einmal durch alle Seiten durchgehen. Sobald wir auf die zweite Seite blättern, verändert sich die URL zu: https://www.scrapethissite.com/pages/forms/?page_num=2. Wir sehen, dass es insgesamt 24 Seiten gibt. Die URL lässt darauf schließen, dass man page_num= um jede Seite ergänzen kann.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Webscraping</span>"
+    ]
+  },
+  {
+    "objectID": "2026-06-11_webscraping.html#informationen-sind-nur-teilweise-sichtbar-müssen-nachgeladen-werden.",
+    "href": "2026-06-11_webscraping.html#informationen-sind-nur-teilweise-sichtbar-müssen-nachgeladen-werden.",
+    "title": "Webscraping",
+    "section": "2. Informationen sind nur teilweise sichtbar, müssen nachgeladen werden.",
+    "text": "2. Informationen sind nur teilweise sichtbar, müssen nachgeladen werden.\nAuch hier gibt es vor allem zwei Möglichkeiten:\n\nScrollen bis zum Ende der Seite lädt neue Informationen\nKlick auf Buttons wie “Weiterlesen” oder “mehr laden” lädt mehr\n\nFür diese Aufgabe eignet sich Python als Programmiersprache mit der Library Playwright. Für die Installation braucht es zwei Schritte: Erstens muss man die Library installieren, z.B. mit pip install playwright. Und zweitens braucht es einen entsprechenden Browser, der “ferngesteuert” werden kann. Diesen installiert man mit playwright install.\n\nMehr laden durch Scrollen\nBeispiel: Programm der fête de la musique Berlin\n\n\nMehr laden durch Klick auf Button\nBeispiel: Viele Produkt-Seiten wie zum Beispiel Sonnencreme, “Mehr laden”",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Webscraping</span>"
+    ]
+  },
+  {
+    "objectID": "2026-06-11_webscraping.html#wichtige-punkte",
+    "href": "2026-06-11_webscraping.html#wichtige-punkte",
+    "title": "Webscraping",
+    "section": "Wichtige Punkte",
+    "text": "Wichtige Punkte\n\nrobots.txt lesen!\nWebscraping ist immer ein wenig unberechenbar – und wird es immer mehr: Webscraping wird immer aufwendiger, weil immer mehr Bots und Crawler unterwegs sind, um das Internet maschinell zu verarbeiten – insbesondere für verschiedenste “KI”-Anwendungen.\nMittelweg finden: Wie bekomme ich schnell die Informationen, die ich brauche, ohne den Server zu sehr zu belasten? Anzahl der Anfragen beschränken!",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Webscraping</span>"
+    ]
+  },
+  {
+    "objectID": "2026-06-18_kartendaten.html",
+    "href": "2026-06-18_kartendaten.html",
+    "title": "Kartendaten",
+    "section": "",
+    "text": "Webscraping – was ist das?",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Kartendaten</span>"
+    ]
+  },
+  {
+    "objectID": "2026-06-25_storytelling.html",
+    "href": "2026-06-25_storytelling.html",
+    "title": "Storytelling",
+    "section": "",
+    "text": "tbd",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Storytelling</span>"
+    ]
+  },
+  {
+    "objectID": "2026-07-02_dramaturgie.html",
+    "href": "2026-07-02_dramaturgie.html",
+    "title": "Dramaturgie",
+    "section": "",
+    "text": "tbd",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Dramaturgie</span>"
+    ]
+  },
+  {
+    "objectID": "2026-07-09_text.html",
+    "href": "2026-07-09_text.html",
+    "title": "Text",
+    "section": "",
+    "text": "tbd",
+    "crumbs": [
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Text</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Harzer, Friedmann. 2017. Literarische Texte Interpretieren : Lyrik -\nProsa - Drama. Vol. 4634. UTB. Paderborn ; Wilhelm\nFink.\n\n\nSengers, Luuk, and Mark Lee Hunter. 2018. Drehbuch Der Recherche:\nDas Verborgene Szenario: Journalistische Recherchen Planen Und\nOrganisieren. Nr-Werkstatt 25. Berlin: Netzwerk Recherche.",
+    "crumbs": [
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>References</span>"
+    ]
+  }
+]

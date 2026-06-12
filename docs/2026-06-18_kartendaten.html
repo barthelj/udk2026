@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ein Projekt strukturieren – UdK Infoklasse: Datenjournalismus Sommersemester 2026</title>
+<title>Kartendaten – UdK Infoklasse: Datenjournalismus Sommersemester 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./2026-06-04_feedback.html" rel="next">
-<link href="./2026-05-07_sammeln.html" rel="prev">
+<link href="./2026-06-25_storytelling.html" rel="next">
+<link href="./2026-06-11_webscraping.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -82,9 +82,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-2e5e9cb112419f7b35b2190a13f3c3da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-cbeed4863d8242317d165af4c2a4e0e2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/bootstrap/bootstrap-2e5e9cb112419f7b35b2190a13f3c3da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -287,7 +284,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2026-05-21_struktur.html"><span class="chapter-title">Ein Projekt strukturieren</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2026-06-18_kartendaten.html"><span class="chapter-title">Kartendaten</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -361,7 +358,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026-05-21_struktur.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Ein Projekt strukturieren</span></a>
+  <a href="./2026-05-21_struktur.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ein Projekt strukturieren</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -376,7 +373,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2026-06-18_kartendaten.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kartendaten</span></a>
+  <a href="./2026-06-18_kartendaten.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Kartendaten</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -409,24 +406,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Inhalt</h2>
    
   <ul>
-  <li><a href="#heute-gehts-um-eure-projekte" id="toc-heute-gehts-um-eure-projekte" class="nav-link active" data-scroll-target="#heute-gehts-um-eure-projekte">Heute geht’s um eure Projekte!</a>
-  <ul class="collapse">
-  <li><a href="#geschichten-in-daten-finden-pfade-zum-erfolg" id="toc-geschichten-in-daten-finden-pfade-zum-erfolg" class="nav-link" data-scroll-target="#geschichten-in-daten-finden-pfade-zum-erfolg">1. Geschichten in Daten finden – Pfade zum Erfolg</a></li>
-  <li><a href="#zeitmanagement-dokumentation" id="toc-zeitmanagement-dokumentation" class="nav-link" data-scroll-target="#zeitmanagement-dokumentation">2. Zeitmanagement &amp; Dokumentation</a>
-  <ul class="collapse">
-  <li><a href="#dokumentation-gedanken-mitschreiben" id="toc-dokumentation-gedanken-mitschreiben" class="nav-link" data-scroll-target="#dokumentation-gedanken-mitschreiben">Dokumentation – Gedanken mitschreiben</a></li>
-  </ul></li>
-  <li><a href="#kleine-datenquellenkunde" id="toc-kleine-datenquellenkunde" class="nav-link" data-scroll-target="#kleine-datenquellenkunde">3. Kleine Datenquellenkunde</a>
-  <ul class="collapse">
-  <li><a href="#wer-könnte-das-wissen-datenquellen-finden" id="toc-wer-könnte-das-wissen-datenquellen-finden" class="nav-link" data-scroll-target="#wer-könnte-das-wissen-datenquellen-finden">Wer könnte das wissen? – Datenquellen finden</a></li>
-  <li><a href="#offene-daten" id="toc-offene-daten" class="nav-link" data-scroll-target="#offene-daten">offene Daten</a></li>
-  <li><a href="#selbst-erhobene-daten" id="toc-selbst-erhobene-daten" class="nav-link" data-scroll-target="#selbst-erhobene-daten">selbst erhobene Daten</a></li>
-  <li><a href="#exklusive-daten" id="toc-exklusive-daten" class="nav-link" data-scroll-target="#exklusive-daten">exklusive Daten</a></li>
-  <li><a href="#gescrapte-daten" id="toc-gescrapte-daten" class="nav-link" data-scroll-target="#gescrapte-daten">gescrapte Daten</a></li>
-  <li><a href="#informationsfreiheitsgesetz-ifg" id="toc-informationsfreiheitsgesetz-ifg" class="nav-link" data-scroll-target="#informationsfreiheitsgesetz-ifg">Informationsfreiheitsgesetz (IFG)</a></li>
-  </ul></li>
-  <li><a href="#parlamentarische-dokumente-drucksachen" id="toc-parlamentarische-dokumente-drucksachen" class="nav-link" data-scroll-target="#parlamentarische-dokumente-drucksachen">Parlamentarische Dokumente (Drucksachen)</a></li>
-  </ul></li>
+  <li><a href="#webscraping-was-ist-das" id="toc-webscraping-was-ist-das" class="nav-link active" data-scroll-target="#webscraping-was-ist-das">Webscraping – was ist das?</a></li>
   </ul>
 </nav>
     </div>
@@ -436,7 +416,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-title">Ein Projekt strukturieren</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-title">Kartendaten</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
 </div>
 
 
@@ -464,220 +444,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><strong>Theorie</strong>:
-<ul>
-<li>ein Projekt strukturieren</li>
-</ul></li>
-<li><strong>Praxis</strong>:
-<ul>
-<li>Projekt definieren</li>
-<li>Probleme finden und beheben</li>
-</ul></li>
-<li><strong>Technik</strong>:
-<ul>
-<li>Tabellenkalkulation, R oder Python</li>
-</ul></li>
-<li><strong>Datenquellen</strong>:
-<ul>
-<li>eigene</li>
-</ul></li>
+<li><p><strong>Theorie</strong>:</p></li>
+<li><p><strong>Praxis</strong>:</p></li>
+<li><p><strong>Technik</strong>:</p></li>
+<li><p><strong>Datenquellen</strong>:</p></li>
 </ul>
 </div>
 </div>
-<section id="heute-gehts-um-eure-projekte" class="level1">
-<h1>Heute geht’s um eure Projekte!</h1>
-<p>Dazu noch drei Punkte:</p>
-<ol type="1">
-<li>Geschichten in Daten finden – Pfade zum Erfolg</li>
-<li>Zeitmanagement &amp; Dokumentation</li>
-<li>Kleine Datenquellenkunde</li>
-</ol>
-<section id="geschichten-in-daten-finden-pfade-zum-erfolg" class="level2">
-<h2 class="anchored" data-anchor-id="geschichten-in-daten-finden-pfade-zum-erfolg">1. Geschichten in Daten finden – Pfade zum Erfolg</h2>
-<p>Kleiner Reminder der verschiedenen Dimensionen, in denen sich eine Geschichte verstecken kann:</p>
-<ol type="1">
-<li>Status quo – Verhältnisse zwischen Gruppen</li>
-<li>Räumliche Verteilung</li>
-<li>Zeitlicher Verlauf</li>
-</ol>
-<p>→ Dimensionen nicht vermischen, sondern jeweils die interessantesten Punkte finden:</p>
-<ol type="1">
-<li>Welche Trends zeichnen sich ab?</li>
-<li>Wo gibt es Ausreißer?</li>
-</ol>
-</section>
-<section id="zeitmanagement-dokumentation" class="level2">
-<h2 class="anchored" data-anchor-id="zeitmanagement-dokumentation">2. Zeitmanagement &amp; Dokumentation</h2>
-<p>Wir arbeiten “iterativ”, also Schritt für Schritt, im Kreis, vor und zurück. Klingt fancy, aber was heißt das?</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Tipp: Pomodoro-Technik
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>25 Minuten konzentriertes Arbeiten (Versinken ist okay)</p>
-<p>5 Minuten Pause – no matter, what</p>
-<ul>
-<li>vor der Pause ggf. Gedanken kurz aufschreiben (max. zwei Sätze)</li>
-<li>nach der Pause Reflexion mit frischem Blick: auf welchem Weg bin ich?</li>
-</ul>
-</div>
-</div>
-<section id="dokumentation-gedanken-mitschreiben" class="level3">
-<h3 class="anchored" data-anchor-id="dokumentation-gedanken-mitschreiben">Dokumentation – Gedanken mitschreiben</h3>
-<p>Ist wie Tagebuch schreiben: Fühlt sich währenddessen überflüssig an, weil “ich weiß ja, was ich im Kopf hab”. Wird über die Zeit aber sehr wertvoll, weil man hinterher nachvollziehen kann, wo und warum man angefangen hat.</p>
-<p>Tipp: Markdown verwenden – das ist schnell erlernbar und hinterher funktional einsetzbar. Die wichtigsten Symbole:</p>
-<pre><code># für die erste Überschrift
-
-## für die zweite Überschrift
-
-dieser Text ist **fett**
-
-dieser Text ist _unterstrichen_
-
-So sieht ein [Link](example.org) aus 
-
-- und das
-- ist eine
-- Aufzählung
-
-1. bzw. eine 
-2. nummerierte
-3. Aufzählung
-
-technische Dinge wie `Code` kann man in sogenannte `Backticks` schreiben, dann bleibt das Format erhalten
-
-(oder drei mal ` für ganze Code-Blöcke)
-</code></pre>
-</section>
-</section>
-<section id="kleine-datenquellenkunde" class="level2">
-<h2 class="anchored" data-anchor-id="kleine-datenquellenkunde">3. Kleine Datenquellenkunde</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/undraw_location-search_nesh.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/undraw_location-search_nesh.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></a></p>
-</figure>
-</div>
-<section id="wer-könnte-das-wissen-datenquellen-finden" class="level3">
-<h3 class="anchored" data-anchor-id="wer-könnte-das-wissen-datenquellen-finden">Wer könnte das wissen? – Datenquellen finden</h3>
-<ol type="1">
-<li>Gibt es jemanden, der diese Daten erheben <strong>muss</strong> (z.B. offizielle Stellen)?</li>
-<li>Gibt es jemanden, der diese Daten erheben <strong>will</strong> (Wissenschaft, NGOs, Datennerds)?</li>
-</ol>
-</section>
-<section id="offene-daten" class="level3">
-<h3 class="anchored" data-anchor-id="offene-daten">offene Daten</h3>
-<ul>
-<li>Statistisches Bundesamt: <a href="destatis.de">destatis.de</a></li>
-<li>Statistische Landesämer: <a href="regionalstatistik.de">regionalstatistik.de</a></li>
-<li>Statistische Landesämter mit eigenen Websites (manchmal anders durchsuchbar, Daten anders gebündelt)</li>
-<li>Portal für alle möglichen Datensätze aus öffentlichen Behörden in Deutschland: <a href="govdata.de">govdata.de</a></li>
-<li><a href="">European Data Portal</a></li>
-<li>EU Open Data Portal</li>
-<li>Eurostat Database</li>
-<li>Weltbank</li>
-<li>IMF</li>
-<li>OECD</li>
-<li>UN Data</li>
-<li>Deutscher Wetterdienst</li>
-<li>NASA</li>
-<li>Europäische Behörden, z.B. European Environment Agency (EEA): <a href="">eea.eu</a></li>
-</ul>
-</section>
-<section id="selbst-erhobene-daten" class="level3">
-<h3 class="anchored" data-anchor-id="selbst-erhobene-daten">selbst erhobene Daten</h3>
-<p>beispielsweise durch eigene Messungen</p>
-</section>
-<section id="exklusive-daten" class="level3">
-<h3 class="anchored" data-anchor-id="exklusive-daten">exklusive Daten</h3>
-<ul>
-<li>Behörden:
-<ul>
-<li>Arbeitsagentur</li>
-<li>Umweltbundesamt</li>
-</ul></li>
-<li>Verbände:
-<ul>
-<li>Marburger Bund,</li>
-<li>Mieterbund</li>
-</ul></li>
-<li><strong>Wissenschaft:</strong>
-<ul>
-<li>Sozioökonomisches Panel (SOEP)</li>
-</ul></li>
-<li><strong>NGOs und Vereine</strong>:
-<ul>
-<li>Greenpeace</li>
-<li>fragdenstaat.de</li>
-</ul></li>
-<li><strong>Vergleichsportale</strong>:
-<ul>
-<li>Check24</li>
-<li>Verivox</li>
-</ul></li>
-</ul>
-</section>
-<section id="gescrapte-daten" class="level3">
-<h3 class="anchored" data-anchor-id="gescrapte-daten">gescrapte Daten</h3>
-<p>beispielsweise durch regelmäßiges, automatisiertes Speichern</p>
-</section>
-<section id="informationsfreiheitsgesetz-ifg" class="level3">
-<h3 class="anchored" data-anchor-id="informationsfreiheitsgesetz-ifg">Informationsfreiheitsgesetz (IFG)</h3>
-<ul>
-<li>Recht auf Zugriff auf amtliche Informationen für alle</li>
-<li>Alle Bundesbehörden sind zur Auskunft verpflichtet</li>
-<li>Recht auf Akteneinsicht</li>
-<li>Landes-IFGs prüfen</li>
-<li>Weitere Infos:
-<ul>
-<li>Fragen und Antworten zum Informationsfreiheitsgesetz&nbsp;</li>
-<li>FragDenStaat.de</li>
-</ul></li>
-</ul>
-<p>Ob es wirklich einen Rechtsanspruch auf Daten gibt, ist in vielen Fällen fraglich – aber immer einen Versuch wert!</p>
-</section>
-</section>
-<section id="parlamentarische-dokumente-drucksachen" class="level2">
-<h2 class="anchored" data-anchor-id="parlamentarische-dokumente-drucksachen">Parlamentarische Dokumente (Drucksachen)</h2>
-<ul>
-<li>Kleine Anfragen (🪦 RIP kleineAnfragen.de)</li>
-<li>Schriftliche Fragen</li>
-<li>Anträge</li>
-<li>Gesetze(sentwürfe)</li>
-<li>Plenarprotokolle</li>
-<li>Datensätze zu Abstimmungsverhalten und Stammdaten</li>
-</ul>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Grundsätzliche Fragen an jeden Datensatz
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><strong>Urheber, Herkunft, Motiv</strong>: Wer hat die Daten wie erhoben? (Wer profitiert?)</li>
-<li><strong>Transparenz</strong>: Was erfahre ich an Zusatzinfos zu den Daten?</li>
-<li><strong>Aktualität</strong>: Sind die Daten aktuell? Überprüfung?<br>
-</li>
-<li><strong>Relationen</strong>: Welche Datenpunkte kann ich miteinander vergleichen?</li>
-<li><strong>Relevanz</strong>: Welche Daten sind wirklich relevant?</li>
-<li><strong>Abgleich</strong>: Welche alternativen (besseren) Datenquellen gibt es zur Überprüfung?</li>
-</ul>
-</div>
-</div>
-<p><a href="https://cloud.udk-berlin.de/s/NGZRBeTmCSSFfgq">Interner Link zu Dokumenten</a></p>
+<section id="webscraping-was-ist-das" class="level2">
+<h2 class="anchored" data-anchor-id="webscraping-was-ist-das">Webscraping – was ist das?</h2>
 
 
 <!-- -->
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1147,227 +926,38 @@ technische Dinge wie `Code` kann man in sogenannte `Backticks` schreiben, dann b
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./2026-05-07_sammeln.html" class="pagination-link" aria-label="Daten sammeln">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Daten sammeln</span></span>
+      <a href="./2026-06-11_webscraping.html" class="pagination-link" aria-label="Webscraping">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Webscraping</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./2026-06-04_feedback.html" class="pagination-link" aria-label="Projekt ist fertig – wir blicken zurück">
-        <span class="nav-page-text"><span class="chapter-title">Projekt ist fertig – wir blicken zurück</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./2026-06-25_storytelling.html" class="pagination-link" aria-label="Storytelling">
+        <span class="nav-page-text"><span class="chapter-title">Storytelling</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">---</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="an">title:</span><span class="co"> "Ein Projekt strukturieren"</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="co">---</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a></span>
-<span id="cb2-5"><a href="#cb2-5"></a>::: {.callout-note icon=false}</span>
-<span id="cb2-6"><a href="#cb2-6"></a></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="fu">## Worum es heute geht</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a></span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="ss">* </span>**Theorie**:</span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="ss">  - </span>ein Projekt strukturieren</span>
-<span id="cb2-11"><a href="#cb2-11"></a>  </span>
-<span id="cb2-12"><a href="#cb2-12"></a><span class="ss">* </span>**Praxis**:</span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="ss">  - </span>Projekt definieren</span>
-<span id="cb2-14"><a href="#cb2-14"></a><span class="ss">  - </span>Probleme finden und beheben</span>
-<span id="cb2-15"><a href="#cb2-15"></a>  </span>
-<span id="cb2-16"><a href="#cb2-16"></a><span class="ss">* </span>**Technik**:</span>
-<span id="cb2-17"><a href="#cb2-17"></a><span class="ss">  - </span>Tabellenkalkulation, R oder Python</span>
-<span id="cb2-18"><a href="#cb2-18"></a></span>
-<span id="cb2-19"><a href="#cb2-19"></a><span class="ss">* </span>**Datenquellen**:</span>
-<span id="cb2-20"><a href="#cb2-20"></a><span class="ss">  - </span>eigene</span>
-<span id="cb2-21"><a href="#cb2-21"></a></span>
-<span id="cb2-22"><a href="#cb2-22"></a>:::</span>
-<span id="cb2-23"><a href="#cb2-23"></a></span>
-<span id="cb2-24"><a href="#cb2-24"></a><span class="fu"># Heute geht's um eure Projekte!</span></span>
-<span id="cb2-25"><a href="#cb2-25"></a></span>
-<span id="cb2-26"><a href="#cb2-26"></a>Dazu noch drei Punkte:</span>
-<span id="cb2-27"><a href="#cb2-27"></a></span>
-<span id="cb2-28"><a href="#cb2-28"></a><span class="ss">1. </span>Geschichten in Daten finden – Pfade zum Erfolg</span>
-<span id="cb2-29"><a href="#cb2-29"></a><span class="ss">2. </span>Zeitmanagement &amp; Dokumentation</span>
-<span id="cb2-30"><a href="#cb2-30"></a><span class="ss">3. </span>Kleine Datenquellenkunde</span>
-<span id="cb2-31"><a href="#cb2-31"></a></span>
-<span id="cb2-32"><a href="#cb2-32"></a><span class="fu">## 1. Geschichten in Daten finden – Pfade zum Erfolg</span></span>
-<span id="cb2-33"><a href="#cb2-33"></a></span>
-<span id="cb2-34"><a href="#cb2-34"></a>Kleiner Reminder der verschiedenen Dimensionen, in denen sich eine Geschichte verstecken kann:</span>
-<span id="cb2-35"><a href="#cb2-35"></a></span>
-<span id="cb2-36"><a href="#cb2-36"></a><span class="ss">1. </span>Status quo – Verhältnisse zwischen Gruppen</span>
-<span id="cb2-37"><a href="#cb2-37"></a><span class="ss">2. </span>Räumliche Verteilung</span>
-<span id="cb2-38"><a href="#cb2-38"></a><span class="ss">3. </span>Zeitlicher Verlauf</span>
-<span id="cb2-39"><a href="#cb2-39"></a></span>
-<span id="cb2-40"><a href="#cb2-40"></a>→ Dimensionen nicht vermischen, sondern jeweils die interessantesten Punkte finden:</span>
-<span id="cb2-41"><a href="#cb2-41"></a></span>
-<span id="cb2-42"><a href="#cb2-42"></a><span class="ss">1. </span>Welche Trends zeichnen sich ab?</span>
-<span id="cb2-43"><a href="#cb2-43"></a><span class="ss">2. </span>Wo gibt es Ausreißer?</span>
-<span id="cb2-44"><a href="#cb2-44"></a></span>
-<span id="cb2-45"><a href="#cb2-45"></a><span class="fu">## 2. Zeitmanagement &amp; Dokumentation </span></span>
-<span id="cb2-46"><a href="#cb2-46"></a>Wir arbeiten "iterativ", also Schritt für Schritt, im Kreis, vor und zurück. Klingt fancy, aber was heißt das?</span>
-<span id="cb2-47"><a href="#cb2-47"></a></span>
-<span id="cb2-48"><a href="#cb2-48"></a>:::{.callout-note icon=false}</span>
-<span id="cb2-49"><a href="#cb2-49"></a><span class="fu">## Tipp: Pomodoro-Technik</span></span>
-<span id="cb2-50"><a href="#cb2-50"></a></span>
-<span id="cb2-51"><a href="#cb2-51"></a>25 Minuten konzentriertes Arbeiten (Versinken ist okay)</span>
-<span id="cb2-52"><a href="#cb2-52"></a></span>
-<span id="cb2-53"><a href="#cb2-53"></a>5 Minuten Pause – no matter, what</span>
-<span id="cb2-54"><a href="#cb2-54"></a></span>
-<span id="cb2-55"><a href="#cb2-55"></a><span class="ss">- </span>vor der Pause ggf. Gedanken kurz aufschreiben (max. zwei Sätze)</span>
-<span id="cb2-56"><a href="#cb2-56"></a><span class="ss">- </span>nach der Pause Reflexion mit frischem Blick: auf welchem Weg bin ich?</span>
-<span id="cb2-57"><a href="#cb2-57"></a></span>
-<span id="cb2-58"><a href="#cb2-58"></a>:::</span>
-<span id="cb2-59"><a href="#cb2-59"></a></span>
-<span id="cb2-60"><a href="#cb2-60"></a><span class="fu">### Dokumentation – Gedanken mitschreiben</span></span>
-<span id="cb2-61"><a href="#cb2-61"></a></span>
-<span id="cb2-62"><a href="#cb2-62"></a>Ist wie Tagebuch schreiben: Fühlt sich währenddessen überflüssig an, weil "ich weiß ja, was ich im Kopf hab". Wird über die Zeit aber sehr wertvoll, weil man hinterher nachvollziehen kann, wo und warum man angefangen hat.</span>
-<span id="cb2-63"><a href="#cb2-63"></a></span>
-<span id="cb2-64"><a href="#cb2-64"></a>Tipp: Markdown verwenden – das ist schnell erlernbar und hinterher funktional einsetzbar. Die wichtigsten Symbole:</span>
-<span id="cb2-65"><a href="#cb2-65"></a></span>
-<span id="cb2-66"><a href="#cb2-66"></a><span class="in">```</span></span>
-<span id="cb2-67"><a href="#cb2-67"></a><span class="in"># für die erste Überschrift</span></span>
-<span id="cb2-68"><a href="#cb2-68"></a></span>
-<span id="cb2-69"><a href="#cb2-69"></a><span class="in">## für die zweite Überschrift</span></span>
-<span id="cb2-70"><a href="#cb2-70"></a></span>
-<span id="cb2-71"><a href="#cb2-71"></a><span class="in">dieser Text ist **fett**</span></span>
-<span id="cb2-72"><a href="#cb2-72"></a></span>
-<span id="cb2-73"><a href="#cb2-73"></a><span class="in">dieser Text ist _unterstrichen_</span></span>
-<span id="cb2-74"><a href="#cb2-74"></a></span>
-<span id="cb2-75"><a href="#cb2-75"></a><span class="in">So sieht ein [Link](example.org) aus </span></span>
-<span id="cb2-76"><a href="#cb2-76"></a></span>
-<span id="cb2-77"><a href="#cb2-77"></a><span class="in">- und das</span></span>
-<span id="cb2-78"><a href="#cb2-78"></a><span class="in">- ist eine</span></span>
-<span id="cb2-79"><a href="#cb2-79"></a><span class="in">- Aufzählung</span></span>
-<span id="cb2-80"><a href="#cb2-80"></a></span>
-<span id="cb2-81"><a href="#cb2-81"></a><span class="in">1. bzw. eine </span></span>
-<span id="cb2-82"><a href="#cb2-82"></a><span class="in">2. nummerierte</span></span>
-<span id="cb2-83"><a href="#cb2-83"></a><span class="in">3. Aufzählung</span></span>
-<span id="cb2-84"><a href="#cb2-84"></a></span>
-<span id="cb2-85"><a href="#cb2-85"></a><span class="in">technische Dinge wie `Code` kann man in sogenannte `Backticks` schreiben, dann bleibt das Format erhalten</span></span>
-<span id="cb2-86"><a href="#cb2-86"></a></span>
-<span id="cb2-87"><a href="#cb2-87"></a><span class="in">(oder drei mal ` für ganze Code-Blöcke)</span></span>
-<span id="cb2-88"><a href="#cb2-88"></a></span>
-<span id="cb2-89"><a href="#cb2-89"></a><span class="in">```</span></span>
-<span id="cb2-90"><a href="#cb2-90"></a></span>
-<span id="cb2-91"><a href="#cb2-91"></a></span>
-<span id="cb2-92"><a href="#cb2-92"></a></span>
-<span id="cb2-93"><a href="#cb2-93"></a><span class="fu">## 3. Kleine Datenquellenkunde</span></span>
-<span id="cb2-94"><a href="#cb2-94"></a></span>
-<span id="cb2-95"><a href="#cb2-95"></a><span class="al">![](images/undraw_location-search_nesh.png)</span>{width=40% fig-align="center"}</span>
-<span id="cb2-96"><a href="#cb2-96"></a></span>
-<span id="cb2-97"><a href="#cb2-97"></a></span>
-<span id="cb2-98"><a href="#cb2-98"></a><span class="fu">### Wer könnte das wissen? – Datenquellen finden</span></span>
-<span id="cb2-99"><a href="#cb2-99"></a></span>
-<span id="cb2-100"><a href="#cb2-100"></a><span class="ss">1. </span>Gibt es jemanden, der diese Daten erheben **muss** (z.B. offizielle Stellen)?</span>
-<span id="cb2-101"><a href="#cb2-101"></a><span class="ss">2. </span>Gibt es jemanden, der diese Daten erheben **will** (Wissenschaft, NGOs, Datennerds)?</span>
-<span id="cb2-102"><a href="#cb2-102"></a></span>
-<span id="cb2-103"><a href="#cb2-103"></a></span>
-<span id="cb2-104"><a href="#cb2-104"></a><span class="fu">### offene Daten</span></span>
-<span id="cb2-105"><a href="#cb2-105"></a></span>
-<span id="cb2-106"><a href="#cb2-106"></a><span class="ss">- </span>Statistisches Bundesamt: <span class="co">[</span><span class="ot">destatis.de</span><span class="co">](destatis.de)</span></span>
-<span id="cb2-107"><a href="#cb2-107"></a><span class="ss">- </span>Statistische Landesämer: <span class="co">[</span><span class="ot">regionalstatistik.de</span><span class="co">](regionalstatistik.de)</span></span>
-<span id="cb2-108"><a href="#cb2-108"></a><span class="ss">- </span>Statistische Landesämter mit eigenen Websites (manchmal anders durchsuchbar, Daten anders gebündelt)</span>
-<span id="cb2-109"><a href="#cb2-109"></a><span class="ss">- </span>Portal für alle möglichen Datensätze aus öffentlichen Behörden in Deutschland: <span class="co">[</span><span class="ot">govdata.de</span><span class="co">](govdata.de)</span></span>
-<span id="cb2-110"><a href="#cb2-110"></a><span class="ss">- </span><span class="co">[</span><span class="ot">European Data Portal</span><span class="co">]()</span></span>
-<span id="cb2-111"><a href="#cb2-111"></a><span class="ss">- </span>EU Open Data Portal</span>
-<span id="cb2-112"><a href="#cb2-112"></a><span class="ss">- </span>Eurostat Database</span>
-<span id="cb2-113"><a href="#cb2-113"></a><span class="ss">- </span>Weltbank</span>
-<span id="cb2-114"><a href="#cb2-114"></a><span class="ss">- </span>IMF</span>
-<span id="cb2-115"><a href="#cb2-115"></a><span class="ss">- </span>OECD</span>
-<span id="cb2-116"><a href="#cb2-116"></a><span class="ss">- </span>UN Data</span>
-<span id="cb2-117"><a href="#cb2-117"></a><span class="ss">- </span>Deutscher Wetterdienst</span>
-<span id="cb2-118"><a href="#cb2-118"></a><span class="ss">- </span>NASA</span>
-<span id="cb2-119"><a href="#cb2-119"></a><span class="ss">- </span>Europäische Behörden, z.B. European Environment Agency (EEA): <span class="co">[</span><span class="ot">eea.eu</span><span class="co">]()</span></span>
-<span id="cb2-120"><a href="#cb2-120"></a></span>
-<span id="cb2-121"><a href="#cb2-121"></a><span class="fu">### selbst erhobene Daten</span></span>
-<span id="cb2-122"><a href="#cb2-122"></a></span>
-<span id="cb2-123"><a href="#cb2-123"></a>beispielsweise durch eigene Messungen</span>
-<span id="cb2-124"><a href="#cb2-124"></a></span>
-<span id="cb2-125"><a href="#cb2-125"></a><span class="fu">### exklusive Daten</span></span>
-<span id="cb2-126"><a href="#cb2-126"></a></span>
-<span id="cb2-127"><a href="#cb2-127"></a><span class="ss">- </span>Behörden:</span>
-<span id="cb2-128"><a href="#cb2-128"></a><span class="ss">  - </span>Arbeitsagentur</span>
-<span id="cb2-129"><a href="#cb2-129"></a><span class="ss">  - </span>Umweltbundesamt</span>
-<span id="cb2-130"><a href="#cb2-130"></a><span class="ss">- </span>Verbände: </span>
-<span id="cb2-131"><a href="#cb2-131"></a><span class="ss">  - </span>Marburger Bund,</span>
-<span id="cb2-132"><a href="#cb2-132"></a><span class="ss">  - </span>Mieterbund</span>
-<span id="cb2-133"><a href="#cb2-133"></a><span class="ss">- </span>**Wissenschaft:** </span>
-<span id="cb2-134"><a href="#cb2-134"></a><span class="ss">  - </span>Sozioökonomisches Panel (SOEP)</span>
-<span id="cb2-135"><a href="#cb2-135"></a><span class="ss">- </span>**NGOs und Vereine**: </span>
-<span id="cb2-136"><a href="#cb2-136"></a><span class="ss">  - </span>Greenpeace</span>
-<span id="cb2-137"><a href="#cb2-137"></a><span class="ss">  - </span>fragdenstaat.de</span>
-<span id="cb2-138"><a href="#cb2-138"></a><span class="ss">- </span>**Vergleichsportale**: </span>
-<span id="cb2-139"><a href="#cb2-139"></a><span class="ss">  - </span>Check24</span>
-<span id="cb2-140"><a href="#cb2-140"></a><span class="ss">  - </span>Verivox</span>
-<span id="cb2-141"><a href="#cb2-141"></a></span>
-<span id="cb2-142"><a href="#cb2-142"></a><span class="fu">### gescrapte Daten</span></span>
-<span id="cb2-143"><a href="#cb2-143"></a></span>
-<span id="cb2-144"><a href="#cb2-144"></a>beispielsweise durch regelmäßiges, automatisiertes Speichern </span>
-<span id="cb2-145"><a href="#cb2-145"></a></span>
-<span id="cb2-146"><a href="#cb2-146"></a><span class="fu">### Informationsfreiheitsgesetz (IFG)</span></span>
-<span id="cb2-147"><a href="#cb2-147"></a></span>
-<span id="cb2-148"><a href="#cb2-148"></a><span class="ss">* </span>Recht auf Zugriff auf amtliche Informationen für alle</span>
-<span id="cb2-149"><a href="#cb2-149"></a><span class="ss">* </span>Alle Bundesbehörden sind zur Auskunft verpflichtet</span>
-<span id="cb2-150"><a href="#cb2-150"></a><span class="ss">* </span>Recht auf Akteneinsicht</span>
-<span id="cb2-151"><a href="#cb2-151"></a><span class="ss">* </span>Landes-IFGs prüfen</span>
-<span id="cb2-152"><a href="#cb2-152"></a><span class="ss">* </span>Weitere Infos:</span>
-<span id="cb2-153"><a href="#cb2-153"></a><span class="ss">    * </span>Fragen und Antworten zum Informationsfreiheitsgesetz&nbsp;</span>
-<span id="cb2-154"><a href="#cb2-154"></a><span class="ss">    * </span>FragDenStaat.de</span>
-<span id="cb2-155"><a href="#cb2-155"></a></span>
-<span id="cb2-156"><a href="#cb2-156"></a>Ob es wirklich einen Rechtsanspruch auf Daten gibt, ist in vielen Fällen fraglich – aber immer einen Versuch wert!</span>
-<span id="cb2-157"><a href="#cb2-157"></a></span>
-<span id="cb2-158"><a href="#cb2-158"></a><span class="fu">## Parlamentarische Dokumente (Drucksachen)</span></span>
-<span id="cb2-159"><a href="#cb2-159"></a></span>
-<span id="cb2-160"><a href="#cb2-160"></a><span class="ss">* </span>Kleine Anfragen (🪦 RIP kleineAnfragen.de)</span>
-<span id="cb2-161"><a href="#cb2-161"></a><span class="ss">* </span>Schriftliche Fragen</span>
-<span id="cb2-162"><a href="#cb2-162"></a><span class="ss">* </span>Anträge</span>
-<span id="cb2-163"><a href="#cb2-163"></a><span class="ss">* </span>Gesetze(sentwürfe)</span>
-<span id="cb2-164"><a href="#cb2-164"></a><span class="ss">* </span>Plenarprotokolle</span>
-<span id="cb2-165"><a href="#cb2-165"></a><span class="ss">* </span>Datensätze zu Abstimmungsverhalten und Stammdaten</span>
-<span id="cb2-166"><a href="#cb2-166"></a></span>
-<span id="cb2-167"><a href="#cb2-167"></a>:::{.callout-note icon=false}</span>
-<span id="cb2-168"><a href="#cb2-168"></a><span class="fu">## Grundsätzliche Fragen an jeden Datensatz</span></span>
-<span id="cb2-169"><a href="#cb2-169"></a><span class="ss">* </span>**Urheber, Herkunft, Motiv**: Wer hat die Daten wie erhoben? (Wer profitiert?)</span>
-<span id="cb2-170"><a href="#cb2-170"></a><span class="ss">* </span>**Transparenz**: Was erfahre ich an Zusatzinfos zu den Daten?</span>
-<span id="cb2-171"><a href="#cb2-171"></a><span class="ss">* </span>**Aktualität**: Sind die Daten aktuell? Überprüfung?              </span>
-<span id="cb2-172"><a href="#cb2-172"></a><span class="ss">* </span>**Relationen**: Welche Datenpunkte kann ich miteinander vergleichen?</span>
-<span id="cb2-173"><a href="#cb2-173"></a><span class="ss">* </span>**Relevanz**: Welche Daten sind wirklich relevant? </span>
-<span id="cb2-174"><a href="#cb2-174"></a><span class="ss">* </span>**Abgleich**: Welche alternativen (besseren) Datenquellen gibt es zur Überprüfung?</span>
-<span id="cb2-175"><a href="#cb2-175"></a>:::</span>
-<span id="cb2-176"><a href="#cb2-176"></a></span>
-<span id="cb2-177"><a href="#cb2-177"></a><span class="co">[</span><span class="ot">Interner Link zu Dokumenten</span><span class="co">](https://cloud.udk-berlin.de/s/NGZRBeTmCSSFfgq)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> "Kartendaten"</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co">---</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a>::: {.callout-note icon=false}</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="fu">## Worum es heute geht</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="ss">* </span>**Theorie**:</span>
+<span id="cb1-11"><a href="#cb1-11"></a>  </span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="ss">* </span>**Praxis**:</span>
+<span id="cb1-13"><a href="#cb1-13"></a>  </span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="ss">* </span>**Technik**:</span>
+<span id="cb1-15"><a href="#cb1-15"></a></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="ss">* </span>**Datenquellen**:</span>
+<span id="cb1-17"><a href="#cb1-17"></a></span>
+<span id="cb1-18"><a href="#cb1-18"></a>:::</span>
+<span id="cb1-19"><a href="#cb1-19"></a></span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="fu">## Webscraping – was ist das?</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 
