@@ -401,8 +401,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhalt</h2>
+   
+  <ul>
+  <li><a href="#beispiele" id="toc-beispiele" class="nav-link active" data-scroll-target="#beispiele">Beispiele</a></li>
+  <li><a href="#dokumentation-und-veröffentlichung" id="toc-dokumentation-und-veröffentlichung" class="nav-link" data-scroll-target="#dokumentation-und-veröffentlichung">Dokumentation und Veröffentlichung</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -427,11 +434,68 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>tbd</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Worum es heute geht
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Theorie</strong>:
+<ul>
+<li>Storytelling in Text und Bild</li>
+<li>Dokumentation des eigenen Arbeitsprozesses</li>
+</ul></li>
+<li><strong>Praxis</strong>:
+<ul>
+<li>Musik-Charts</li>
+<li>Daten zu Demokratie / Autokratie</li>
+</ul></li>
+<li><strong>Technik</strong>:
+<ul>
+<li>Quarto</li>
+<li>Statische HTML-Webseiten</li>
+</ul></li>
+<li><strong>Datenquellen</strong>:
+<ul>
+<li>Musik-Charts</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<section id="beispiele" class="level2">
+<h2 class="anchored" data-anchor-id="beispiele">Beispiele</h2>
+<ul>
+<li><p><a href="https://steueroasen.watch/">Steueroasen in Deutschland</a> (FragDenStaat / ZDF Magazin Royale)</p></li>
+<li><p><a href="https://schnee-war-gestern.interaktiv.br.de/">Schneefallgrenzen und Skigebiete</a> (BR Data)</p></li>
+</ul>
+</section>
+<section id="dokumentation-und-veröffentlichung" class="level2">
+<h2 class="anchored" data-anchor-id="dokumentation-und-veröffentlichung">Dokumentation und Veröffentlichung</h2>
+<p>Bei der Arbeit mit Daten ist es üblich, die Rohdaten in verschiedenen Schritte zu bereinigen und neu anzuordnen. Nicht immer wissen wir Wochen später noch, was genau wir eigentlich gemacht haben. Deshalb ist es wichtig, alle Arbeitsschritte einzeln festzuhalten – und am besten zu prüfen, indem man die Analyse im Schnelldurchlauf anhand dieser Anleitung nochmal durchgeht. Nur so kann man sicherstellen, dass die Daten reproduzierbar korrekt verarbeitet werden. Immer wieder fallen dabei auch noch Fehler auf – die so vor der Veröffentlichung korrigiert werden können.</p>
+<p>Eine besondere Herausforderung ist es dabei, am Ende zu wissen, welche Zahl aus welchem Verarbeitungsschritt kommt. Das kann man sich entweder strukturiert notieren – oder technische Hilfsmittel nutzen wie beispielsweise Quarto-Notebooks. Diese Notebooks verbinden Notizen mit Code-Abschnitten – und bieten eine Lösung für das Problem, dass man bei der eigenen Analyse in der Regel in umgekehrter Reihenfolge vorgeht wie bei der Veröffentlichung.</p>
+<p>Der Trick ist dabei die “embed”-Funktion: Dabei kann man in einem Notebook Analyse inkl. Code notieren – und die interessantesten Outputs (Grafiken, Tabellen, einzelne Zahlen) in einem anderen Notebook einfügen, wie hier großartig von Emily Riederer erklärt: https://www.emilyriederer.com/post/quarto-comms/</p>
+<p>Dazu braucht es zwei Dinge:</p>
+<ol type="1">
+<li><p>Jede Code-Zelle im Analyse-Notebook <code>analyse.qmd</code>, die referenziert werden soll, braucht ein Label, beispielsweise <code>#| label: linechart-income-growth</code>.</p></li>
+<li><p>Im Report-Notebook, das zur Veröffentlichung bestimmt ist, verweisen wir dann auf die Code-Zelle mit einer Zeiel in diesem Format: <code>{{&lt; embed analyse.qmd#linechart-income-growth &gt;}}</code>.</p></li>
+</ol>
+<p>Wenn dann das Notebook <code>report.qmd</code> rendern / ausführen (mit Ctrl-Shift-K), werden alle verknüpften Notebooks mit ausgeführt. Magic… ✨</p>
+<p>Das heißt aber auch: An dieser Stelle werden <em>immer alle</em> Code-Schnipsel ausgeführt! Nervig wird das, wenn das besonders lange braucht oder Fehler prodziert. Dann bricht das Rendern nämlich ab und es gibt kein Ausgabe-Dokument. Deshalb ein Tipp: zeit- und ressourcenaufwendige Schritte auslagern und in extra Tabellen zwischenspeichern.</p>
+<p>Am Ende produziert Quarto standardmäßig ein html-Dokument. Das kann man im Browser öffnen und bekommt eine hübsch aufbereitete Ansicht des Reports – auch interaktiv. Wem das nicht hübsch genug ist: Das A(sehen ist natürlich flexibel anpassbar, mehr Infos dazu <a href="https://quarto.org/docs/output-formats/html-themes.html">gibt es hier</a>.</p>
+<p>Weil das nichts weiter als ein html-Dokument ist, kann man auch ins Ausgangs-Dokument <code>report.qmd</code> nicht nur in Markdown schreiben, sondern auch html-Code verwenden.</p>
+<p>Auch Datawrapper-Grafiken können über einen html-embed-Code eingebunden werden (Achtung: hier ist ein anderes “embed” gemeint, das Prinzip ist aber ähnlich, alles erscheint aus einem Guss). Ein entscheidender Unterschied: Sobald man das html im Browser öffnet, wird die Datawrapper-Grafik von deren Servern geladen. Kein Internet heißt dann keine Grafik!</p>
+<p>Die ganze technische Grundlage gibt es <a href="https://quarto.org/docs/authoring/notebook-embed.html">hier zum Nachlesen</a>.</p>
+<p>Zusätzlich kann man aus dem Ursprungs-Format auch PDF, epub, Word-Dokumente oder Präsentationen auf Knopfdruck erstellen. Oder direkt ein ganzes Buch</p>
 
 
 <!-- -->
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -915,7 +979,60 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-3"><a href="#cb1-3"></a><span class="an">format:</span><span class="co"> html</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="co">---</span></span>
 <span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a>tbd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-6"><a href="#cb1-6"></a>::: {.callout-note icon=false}</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="fu">## Worum es heute geht</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="ss">* </span>**Theorie**:</span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="ss">  - </span>Storytelling in Text und Bild</span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="ss">  - </span>Dokumentation des eigenen Arbeitsprozesses</span>
+<span id="cb1-13"><a href="#cb1-13"></a>  </span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="ss">* </span>**Praxis**:</span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="ss">  - </span>Musik-Charts</span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="ss">  - </span>Daten zu Demokratie / Autokratie</span>
+<span id="cb1-17"><a href="#cb1-17"></a>  </span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="ss">* </span>**Technik**:</span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="ss">  - </span>Quarto</span>
+<span id="cb1-20"><a href="#cb1-20"></a><span class="ss">  - </span>Statische HTML-Webseiten</span>
+<span id="cb1-21"><a href="#cb1-21"></a></span>
+<span id="cb1-22"><a href="#cb1-22"></a><span class="ss">* </span>**Datenquellen**:</span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="ss">  - </span>Musik-Charts</span>
+<span id="cb1-24"><a href="#cb1-24"></a></span>
+<span id="cb1-25"><a href="#cb1-25"></a>:::</span>
+<span id="cb1-26"><a href="#cb1-26"></a></span>
+<span id="cb1-27"><a href="#cb1-27"></a><span class="fu">## Beispiele</span></span>
+<span id="cb1-28"><a href="#cb1-28"></a></span>
+<span id="cb1-29"><a href="#cb1-29"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Steueroasen in Deutschland</span><span class="co">](https://steueroasen.watch/)</span> (FragDenStaat / ZDF Magazin Royale)</span>
+<span id="cb1-30"><a href="#cb1-30"></a></span>
+<span id="cb1-31"><a href="#cb1-31"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Schneefallgrenzen und Skigebiete</span><span class="co">](https://schnee-war-gestern.interaktiv.br.de/)</span> (BR Data)</span>
+<span id="cb1-32"><a href="#cb1-32"></a></span>
+<span id="cb1-33"><a href="#cb1-33"></a><span class="fu">## Dokumentation und Veröffentlichung</span></span>
+<span id="cb1-34"><a href="#cb1-34"></a></span>
+<span id="cb1-35"><a href="#cb1-35"></a>Bei der Arbeit mit Daten ist es üblich, die Rohdaten in verschiedenen Schritte zu bereinigen und neu anzuordnen. Nicht immer wissen wir Wochen später noch, was genau wir eigentlich gemacht haben. Deshalb ist es wichtig, alle Arbeitsschritte einzeln festzuhalten – und am besten zu prüfen, indem man die Analyse im Schnelldurchlauf anhand dieser Anleitung nochmal durchgeht. Nur so kann man sicherstellen, dass die Daten reproduzierbar korrekt verarbeitet werden. Immer wieder fallen dabei auch noch Fehler auf – die so vor der Veröffentlichung korrigiert werden können.</span>
+<span id="cb1-36"><a href="#cb1-36"></a></span>
+<span id="cb1-37"><a href="#cb1-37"></a>Eine besondere Herausforderung ist es dabei, am Ende zu wissen, welche Zahl aus welchem Verarbeitungsschritt kommt. Das kann man sich entweder strukturiert notieren – oder technische Hilfsmittel nutzen wie beispielsweise Quarto-Notebooks. Diese Notebooks verbinden Notizen mit Code-Abschnitten – und bieten eine Lösung für das Problem, dass man bei der eigenen Analyse in der Regel in umgekehrter Reihenfolge vorgeht wie bei der Veröffentlichung.</span>
+<span id="cb1-38"><a href="#cb1-38"></a></span>
+<span id="cb1-39"><a href="#cb1-39"></a>Der Trick ist dabei die "embed"-Funktion: Dabei kann man in einem Notebook Analyse inkl. Code notieren – und die interessantesten Outputs (Grafiken, Tabellen, einzelne Zahlen) in einem anderen Notebook einfügen, wie hier großartig von Emily Riederer erklärt: https://www.emilyriederer.com/post/quarto-comms/</span>
+<span id="cb1-40"><a href="#cb1-40"></a></span>
+<span id="cb1-41"><a href="#cb1-41"></a>Dazu braucht es zwei Dinge: </span>
+<span id="cb1-42"><a href="#cb1-42"></a></span>
+<span id="cb1-43"><a href="#cb1-43"></a><span class="ss">1. </span>Jede Code-Zelle im Analyse-Notebook <span class="in">`analyse.qmd`</span>, die referenziert werden soll, braucht ein Label, beispielsweise <span class="in">`#| label: linechart-income-growth`</span>.</span>
+<span id="cb1-44"><a href="#cb1-44"></a></span>
+<span id="cb1-45"><a href="#cb1-45"></a><span class="ss">2. </span>Im Report-Notebook, das zur Veröffentlichung bestimmt ist, verweisen wir dann auf die Code-Zelle mit einer Zeiel in diesem Format: <span class="in">`{{&lt; embed analyse.qmd#linechart-income-growth &gt;}}`</span>.</span>
+<span id="cb1-46"><a href="#cb1-46"></a></span>
+<span id="cb1-47"><a href="#cb1-47"></a>Wenn dann das Notebook <span class="in">`report.qmd`</span> rendern / ausführen (mit Ctrl-Shift-K), werden alle verknüpften Notebooks mit ausgeführt. Magic... ✨</span>
+<span id="cb1-48"><a href="#cb1-48"></a></span>
+<span id="cb1-49"><a href="#cb1-49"></a>Das heißt aber auch: An dieser Stelle werden _immer alle_ Code-Schnipsel ausgeführt! Nervig wird das, wenn das besonders lange braucht oder Fehler prodziert. Dann bricht das Rendern nämlich ab und es gibt kein Ausgabe-Dokument. Deshalb ein Tipp: zeit- und ressourcenaufwendige Schritte auslagern und in extra Tabellen zwischenspeichern.</span>
+<span id="cb1-50"><a href="#cb1-50"></a></span>
+<span id="cb1-51"><a href="#cb1-51"></a>Am Ende produziert Quarto standardmäßig ein html-Dokument. Das kann man im Browser öffnen und bekommt eine hübsch aufbereitete Ansicht des Reports – auch interaktiv. Wem das nicht hübsch genug ist: Das A(sehen ist natürlich flexibel anpassbar, mehr Infos dazu <span class="co">[</span><span class="ot">gibt es hier</span><span class="co">](https://quarto.org/docs/output-formats/html-themes.html)</span>.</span>
+<span id="cb1-52"><a href="#cb1-52"></a></span>
+<span id="cb1-53"><a href="#cb1-53"></a>Weil das nichts weiter als ein html-Dokument ist, kann man auch ins Ausgangs-Dokument <span class="in">`report.qmd`</span> nicht nur in Markdown schreiben, sondern auch html-Code verwenden.</span>
+<span id="cb1-54"><a href="#cb1-54"></a></span>
+<span id="cb1-55"><a href="#cb1-55"></a>Auch Datawrapper-Grafiken können über einen html-embed-Code eingebunden werden (Achtung: hier ist ein anderes "embed" gemeint, das Prinzip ist aber ähnlich, alles erscheint aus einem Guss). Ein entscheidender Unterschied: Sobald man das html im Browser öffnet, wird die Datawrapper-Grafik von deren Servern geladen. Kein Internet heißt dann keine Grafik!</span>
+<span id="cb1-56"><a href="#cb1-56"></a></span>
+<span id="cb1-57"><a href="#cb1-57"></a>Die ganze technische Grundlage gibt es <span class="co">[</span><span class="ot">hier zum Nachlesen</span><span class="co">](https://quarto.org/docs/authoring/notebook-embed.html)</span>.</span>
+<span id="cb1-58"><a href="#cb1-58"></a></span>
+<span id="cb1-59"><a href="#cb1-59"></a>Zusätzlich kann man aus dem Ursprungs-Format auch PDF, epub, Word-Dokumente oder Präsentationen auf Knopfdruck erstellen. Oder direkt ein ganzes Buch </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
